@@ -1,0 +1,1716 @@
+A. MYTHOLOGICAL MOTIFS
+A0.-A99. Creator 
+A0.Creator
+A10.Nature of the creator
+A20.Origin of the creator 
+A30.Creator's companions
+A40.Creator's advisers
+A50.Conflict of good and evil creators 
+A60.Marplot at creation
+A70.Creator - miscellaneous motifs
+A100.-A199. The gods in general 
+A100.Deity
+A100.-A499.GODS
+A110.Origin of the gods
+A120.Nature and appearance of the gods
+A140.God as workmen
+A150.Daily life of the gods
+A160.Mutual relations of the gods 
+A170.Deeds of the gods
+A180.Gods in relation to mortals 
+A190.Gods - miscellaneous motifs
+A200.-A299. Gods of the upper world 
+A200.God of the upper world 
+A210.Sky-god
+A220.Sun-god
+A240.Moon-god 
+A250.Star-god 
+A260.God of light 
+A270.God of dawn 
+A280.Weather god
+A300.-A399. Gods of the underworld 
+A300.God of the underworld 
+A310.God of the world of the dead
+A400.-A499. Gods of the earth 
+A400.God of the earth 
+A410.Local gods
+A420.God of water
+A430.God of vegetation
+A440.God of animals
+A450.God of trades and professions 
+A460.God of abstractions 
+A490.Miscellaneous gods of the earth
+A500.-A599. Demigods and culture heroes
+A500.Demigods and culture heroes
+A510.Origin of the culture hero (demigod)
+A520.Nature of the culture hero (demigod)
+A530.Culture hero establishes law and order
+A560.Culture hero's (demigod) departure
+A570.Culture hero still lives
+A580.Culture hero's (divinity's) expected return
+A590.Demigods and culture heroes - miscellaneous
+A600.-A899.COSMOGONY AND COSMOLOGY
+A600.-A699. The universe
+A600.-A649.Creation of the universe
+A610.Creation of universe by creator
+A620.Spontaneous creation of universe
+A630.Series of creations
+A640.Other means of creating the universe
+A650.-A699.Nature of the universe
+A650.The universe as a whole
+A660.Nature of the upper world
+A670.Nature of the lower world
+A690.Miscellaneous worlds
+A700.-A799. The heavens
+A700.Creation of the heavenly bodies
+A710.-A739.The sun
+A710.Creation of the sun
+A720.Nature and condition of the sun
+A740.-A759.The moon
+A740.Creation of the moon
+A750.Nature and condition of the moon
+A760.-A789.The stars
+A760.Creation and condition of the stars
+A770.Origin of particular stars
+A780.The planets (comets, etc.)
+A790.-A799.The heavenly lights
+A800.-A899. The earth
+A800.-A839.Creation of the earth
+A810.Primeval water
+A820.Other means of creation of earth
+A830.Creation of earth by creator
+A840.Support of the earth
+A850.Changes in the earth
+A870.Nature and condition of the earth
+A900.-A999. Topographical features if the earth
+A900.Topography - general considerations
+A910.-A949.Water features
+A910.Origin of water features - general
+A920.Origin of the seas
+A930.Origin of streams
+A940.Origin of other bodies of water
+A950.-A999.Land features
+A950.Origin of the land
+A960.Creation of mountains
+A970.Origin of rocks and stones
+A980.Origin of particular places
+A990.Other land features
+A1000.-A1099. World calamities
+A1000.World catastrophe
+A1010.Deluge
+A1020.Escape from deluge
+A1030.World fire
+A1040.Continuous winter destroys the race
+A1050.Heavens break up at end of world
+A1060.Earth-disturbances at end of world
+A1070.Fettered monster's escape at end of world
+A1080.Battle at end of world
+A1090.World calamities - miscellaneous motifs
+A1100.-A1199. Establishment of natural order
+A1110.Establishment of present order: waters
+A1120.Establishment of present order: winds
+A1130.Establishment of present order: weather phenomena
+A1150.Determination of seasons
+A1160.Determination of the months
+A1170.Origin of night and day
+A1180.Establishment of present order - miscellaneous motifs
+A1200.-A1699.CREATION AND ORDERING OF HUMAN LIFE
+A1200.-A1299. Creation of man
+A1210.Creation of man by creator
+A1220.Creation of man through evolution
+A1230.Emergence or descent of first man to earth
+A1240.Man made from mineral substance
+A1250.Man made from vegetable substance
+A1260.Mankind made from miscellaneous materials
+A1270.Primeval human pair
+A1290.Creation of man - other motifs
+A1300.-A1399. Ordering of human life
+A1310.Arrangement of man's bodily attributes
+A1320.Determination of span of life
+A1330.Beginnings of trouble for man
+A1350.Origin of sex functions
+A1360.Man's growth and maturity
+A1370.Origin of mental and moral characteristics
+A1390.Ordaining of human life - miscellaneous
+A1400.-A1499. Acquisition of culture
+A1400.Acquisition of human culture
+A1410.Acquisition of livable environment
+A1420.Acquisition of food supply
+A1430.Acquisition of other necessities
+A1440.Acquisition of crafts
+A1460.Acquisition of arts
+A1470.Beginning of social relationships
+A1480.Acquisition of wisdom and learning
+A1490.Acquisition of culture - miscellaneous
+A1500.-A1599. Origin of customs
+A1510.Origin of eating customs
+A1520.Origin of hunting and fishing customs
+A1530.Origin of social ceremonials
+A1540.Origin of religious ceremonials
+A1550.Origin of customs of courtship and marriage
+A1560.Origin of customs connected with birth
+A1570.Origin of regulations within the family
+A1580.Origin of laws
+A1590.Origin of other customs
+A1600.-A1699. Distribution and differentiation of peoples
+A1610.Origin of various tribes
+A1620.Distribution of tribes
+A1630.Wandering of tribes
+A1640.Origin of tribal subdivisions
+A1650.Origin of different classes - social and professional
+A1660.Characteristics of various peoples - in personal appearance
+A1670.Characteristics of various peoples - in industry and warfare
+A1680.Characteristics of various peoples - in habits
+A1700.-A2199.CREATION OF ANIMAL LIFE
+A1700.-A1799. Creation of animal life - general
+A1710.Creation of animals through transformation
+A1730.Creation of animals as punishment
+A1750.Animals created through opposition of devil to god
+A1770.Creation of animals from unusual primeval mating
+A1790.Creation of animals - other motifs
+A1800.-A1899. Creation of mammals
+A1810.-A1839.Creation of carnivore
+A1810.Creation of felidae
+A1820.Creation of mustelidae
+A1830.Creation of canidae and other carnivore
+A1840.Creation of rodentia
+A1860.Creation of primate
+A1870.Creation of ungulate
+A1890.Creation of other mammals
+A1900.-A1999. Creation of birds
+A1910.Creation of passeriformes
+A1930.Creation of falconiformes
+A1940.Creation of charidriiformes
+A1950.Creation of coraciiformes
+A1960.Creation of ciconiiformes
+A1970.Creation of miscellaneous birds
+A2000.-A2099. Creation of insects
+A2010.Creation of hymenoptera
+A2020.Creation of coleoptera
+A2030.Creation of diptera
+A2040.Creation of lepidoptera
+A2050.Creation of hemiptera
+A2060.Creation of orthoptera
+A2070.Creation of miscellaneous insects
+A2100.-A2199. Creation of fish and other animals
+A2100.-A2139.Creation of fish
+A2100.Creation of fish
+A2110.Creation of particular fishes
+A2140.Creation of reptiles
+A2160.-A2199.Origin of amphibians and other animal forms
+A2160.Origin of amphibian
+A2170.Origin of miscellaneous animal forms
+A2200.-A2599.ANIMAL CHARACTERISTICS
+A2200.-A2299. Various causes of animal characteristics
+A2210.Animal characteristics: change in ancient animal
+A2220.Animal characteristics as reward
+A2230.Animal characteristics as punishment
+A2240.Animal characteristics: obtaining another's qualities
+A2250.Animal characteristics: result of contest
+A2260.Animal characteristics from transformation
+A2270.Animal characteristics from miscellaneous causes
+A2300.-A2399. Causes of animal characteristics: body
+A2310.Origin of animal characteristics: body covering
+A2320.Origin of animal characteristics: head
+A2330.Origin of animal characteristics: face
+A2350.Origin of animal characteristics: trunk
+A2370.Animal characteristics: extremities
+A2380.Animal characteristics: other bodily features
+A2400.-A2499. Causes of animal characteristics: appearance and habits
+A2400.Animal characteristics: general appearance
+A2410.Animal characteristics: color and smell
+A2420.Animal characteristics: voice and hearing
+A2430.Animal characteristics: dwelling and food
+A2440.Animal characteristics: carriage
+A2450.Animal's daily work
+A2460.Animal characteristics: attack and defense
+A2470.Animal's habitual bodily movements
+A2480.Periodic habits of animals
+A2490.Other habits of animals
+A2500.-A2599. Animal characteristics - miscellaneous
+A2510.Utility of animals
+A2520.Disposition of animals
+A2540.Other animal characteristics
+A2600.-A2699. Origin of trees and plants
+A2600.-A2649.Various origins of plants
+A2600.Origin of plants
+A2610.Creation of plants by transformation
+A2620.Plants originate from experience of holy person
+A2630.Other types of plant origins
+A2650.-A2699.Origin of various plants and trees
+A2650.Origin of flowers
+A2680.Origin of other plant forms
+A2700.-A2799. Origin of plant characteristics
+A2700.-A2749.Various origins of plant characteristics
+A2710.Plant characteristics as reward
+A2720.Plant characteristics as punishment
+A2730.Miscellaneous reasons for plant characteristics
+A2750.-A2799.Origin of various plant characteristics
+A2750.Interior and bark of plant
+A2760.Leaves of plant
+A2770.Other plant characteristics
+A2800.-A2899. Miscellaneous explanations
+A2800.-A2849.Miscellaneous explanations: origins
+A2850.-A2899.Miscellaneous explanations: characteristics
+B. ANIMALS
+B0.-B99. Mythical animals
+B10.Mythical beasts and hybrids
+B20.Beast-men
+B30.Mythical birds
+B40.Bird-beasts
+B50.Bird-men
+B60.Mythical fish
+B70.Fish-beasts
+B80.Fish-men
+B90.Other mythical animals
+B100.-B199. Magic animals
+B100.-B119.Treasure animals
+B100.Treasure animals - general
+B110.Treasure producing parts of animals
+B120.-B169.Animals with magic wisdom
+B120.Wise animals
+B130.Truth telling animals
+B140.Prophetic animals
+B150.Oracular animals
+B160.Wisdom-giving animals
+B170.-B189.Other magic animals
+B170.Magic birds, fish, reptiles, etc.
+B180.Magic quadrupeds
+B190.Magic animals: miscellaneous motifs
+B200.-B299. Animals with human traits
+B210.Speaking animals
+B220.Animal kingdom (community)
+B230.Parliament of animals
+B240.King of animals
+B250.Religious animals
+B260.Animal warfare
+B270.Animals in legal relations
+B280.Animal weddings
+B290.Other animals with human traits
+B300.-B599.FRIENDLY ANIMALS
+B300.-B349. Helpful animals - general
+B310.Acquisition of helpful animal
+B320.Reward of helpful animal
+B330.Death of helpful animal
+B340.Treatment of helpful animal - miscellaneous
+B350.-B399. Grateful animals
+B360.Animals grateful for rescue from peril of death
+B370.Animals grateful to captor for release
+B380.Animals grateful for relief from pain
+B390.Animals grateful for other kind acts
+B400.-B499. Kinds of helpful animals
+B400.-B449.Helpful beasts
+B400.Helpful domestic beasts
+B430.Helpful wild beasts
+B450.Helpful birds
+B470.Helpful fish
+B480.Helpful insects
+B490.Other helpful animals
+B500.-B599. Services of helpful animals
+B500.Magic power from animal
+B510.Healing by animal
+B520.Animals save person's life
+B530.Animals nourish men
+B540.Animal rescuer or retriever
+B550.Animals carry men
+B560.Animals advise men
+B570.Animals serve men
+B580.Animals help men to wealth and greatness
+B590.Miscellaneous service of helpful animals
+B600.-B699. Marriage of person to animal
+B610.Animal paramour
+B620.Animal suitor
+B630.Offspring of marriage to animal
+B640.Marriage to person in animal form
+B650.Marriage to animal in human form
+B700.-B799. Fanciful traits of animals
+B710.Fanciful origin of animals
+B720.-B749.Fanciful physical qualities of animals
+B720.Fanciful bodily members of animals
+B730.Fanciful color, smell, etc. of animals
+B740.Fanciful marvellous strength of animals
+B750.Fanciful habits of animals
+B770.Other fanciful traits of animals
+B800.-B899. Miscellaneous animal motifs
+B870.Giant animals
+C. TABU
+C0.-C99. Tabu connected with supernatural beings
+C0.Tabu: contact with supernatural
+C10.Tabu: profanely calling up spirit (devil, etc.)
+C20.Tabu: calling on ogre or destructive animal
+C30.Tabu: offending supernatural relative
+C40.Tabu: offending spirits of water, mountain, etc.
+C50.Tabu: offending the gods
+C70.Tabu: offending other sacred beings
+C90.Other tabus in connection with sacred beings
+C100.-C199. Sex tabu
+C100.Sex tabu
+C110.Tabu: sexual intercourse
+C120.Tabu: kissing
+C130.Tabu connected with puberty
+C140.Tabu connected with menses
+C150.Tabu connected with childbirth
+C160.Tabu connected with marriage
+C170.Tabu connected with husband's or wife's relatives
+C180.Tabu confined to one sex
+C190.Sex tabu - miscellaneous
+C200.-C299. Eating and drinking tabu
+C200.-C249.Eating tabus
+C200.Tabu: eating (general)
+C210.Tabu: eating in certain place
+C220.Tabu: eating certain things
+C230.Tabu: eating at certain time
+C240.Tabu: eating food of certain person
+C250.-C279.Drinking tabus
+C250.Tabu: drinking
+C260.Tabu: drinking at certain place
+C270.Tabu: drinking certain things
+C280.Tabu: miscellaneous eating and drinking tabus
+C300.-C399. Looking tabu
+C300.Looking tabu
+C310.Tabu: looking at certain person or thing
+C320.Tabu: looking into certain receptacle
+C330.Tabu: looking in certain direction
+C400.-C499. Speaking tabu
+C400.Speaking tabu
+C410.Tabu: asking questions
+C420.Tabu: uttering secrets
+C430.Name tabu
+C440.Origin tabu
+C450.Tabu: boasting
+C460.Laughing tabu
+C480.Tabu: other vocal expressions
+C490.Other speaking tabus
+C500.-C549. Tabu: touching
+C500.Tabu: touching
+C510.Tabu: touching tree (plant)
+C520.Tabu: touching ground
+C530.Tabu: touching (miscellaneous)
+C550.-C599. Class tabu
+C550.Class tabu
+C560.Tabu: things not to be done by certain class
+C600.-C699. Unique prohibitions and compulsions
+C600.-C649.The one forbidden thing
+C600.Unique prohibition
+C610.The one forbidden place
+C620.Tabu: partaking of the one forbidden object
+C630.Tabu: the one forbidden time
+C640.Unique prohibition - miscellaneous
+C650.-C699.The one compulsory thing
+C650.The one compulsory thing
+C680.Other compulsions
+C700.-C899. Miscellaneous tabus
+C700.Miscellaneous tabus
+C710.Tabus connected with other-world journeys
+C720.Tabu: attending toilet needs
+C730.Tabu: resting
+C740.Tabu: doing deed of mercy or courtesy
+C750.Time tabu
+C770.Tabu: overweening pride
+C780.Tabu: buying, selling, etc.
+C810.Tabu: heeding persuasive person or thing
+C820.Tabu: finding certain secret
+C830.-C899.Unclassified tabus
+C830.Unclassified tabus
+C900.-C999. Punishment for breaking tabu
+C900.Punishment for breaking tabu
+C910.Permanent sign of disobedience for breaking tabu
+C920.Death for breaking tabu
+C930.Loss of fortune for breaking tabu
+C940.Sickness or weakness for breaking tabu
+C950.Person carried to other world for breaking tabu
+C960.Transformation for breaking tabu
+C980.Miscellaneous punishments for breaking tabu
+D. MAGIC
+D0.-D699.TRANSFORMATION
+D10.-D99. Transformation of man to different man
+D10.Transformation to person of different sex
+D20.Transformation to person of different social class
+D30.Transformation to person of different race
+D40.Transformation to likeness of another person
+D50.Magic changes in man himself
+D90.Transformation: man to different man - miscellaneous
+D100.-D199. Transformation: man to animal
+D100.-D149.Transformation man to mammal
+D110.Transformation: man to wild beast (mammal)
+D130.Transformation: man to domestic beast (mammal)
+D150.Transformation: man to bird
+D170.Transformation: man to fish
+D180.Transformation: man to insect
+D190.Transformation: man to reptiles and miscellaneous animals
+D200.-D299. Transformation: man to object
+D210.Transformation: man to vegetable form
+D230.Transformation: man to mineral form
+D250.Transformation: man to manufactured object
+D270.Transformation: man to object - miscellaneous
+D300.-D399. Transformation: animal to person
+D310.-D349.Transformation: mammal to person
+D310.Transformation: wild beast (mammal) to person
+D330.Transformation: domestic beast (mammal) to person
+D350.Transformation: bird to person
+D370.Transformation: fish to man
+D380.Transformation: insect to person
+D390.Transformation: reptiles and miscellaneous animals to persons
+D400.-D499. Other forms of transformation
+D410.Transformation: one animal to another
+D420.Transformation: animal to object
+D430.Transformation: object to person
+D440.Transformation: object to animal
+D450.-D499.Transformation: object to object
+D450.Transformation: object to another object
+D470.Transformation: material of object changed
+D480.Size of object transformed
+D500.-D599. Means of transformation
+D510.Transformation by breaking tabu
+D520.Transformation through power of the word
+D530.Transformation by putting on skin, clothing, etc.
+D550.Transformation by eating or drinking
+D560.Transformation by various means
+D600.-D699. Miscellaneous transformation incidents
+D610.Repeated transformation
+D620.Periodic transformation
+D630.Transformation and disenchantment at will
+D640.Reasons for voluntary transformation
+D660.Motive for transformation of others
+D670.Magic flight
+D680.Miscellaneous circumstances of transformation
+D700.-D799. Disenchantment
+D710.Disenchantment by rough treatment
+D720.Disenchantment by removing (destroying) covering of enchanted person
+D730.Disenchantment by submission
+D750.Disenchantment by faithfulness of others
+D760.Disenchantment by miscellaneous means
+D790.Attendant circumstances of disenchantment
+D800.-D1699.MAGIC OBJECTS
+D800.-D899. Ownership of magic objects
+D800.Magic object
+D810.-D859.Acquisition of magic object
+D810.Magic object a gift
+D830.Magic object acquired by trickery
+D840.Magic object found
+D850.Magic object otherwise obtained
+D860.Loss of magic object
+D880.Recovery of magic object
+D900.-D1299. Kinds of magic objects
+D900.Magic weather phenomena
+D910.Magic body of water
+D930.Magic land features
+D940.Magic forests
+D950.Magic tree
+D960.Magic gardens and plants
+D980.Magic fruits and vegetables
+D990.-D1029.Magic bodily members
+D990.Magic bodily members - human
+D1010.Magic bodily members - animal
+D1030.Magic food
+D1040.Magic drink
+D1050.Magic clothes
+D1070.Magic ornaments
+D1080.Magic weapons
+D1110.Magic conveyances
+D1130.Magic buildings and parts
+D1150.Magic furniture
+D1170.Magic utensils and implements
+D1210.Magic musical instruments
+D1240.Magic waters and medicines
+D1250.Miscellaneous magic objects
+D1300.-D1599. Function of magic objects
+D1300.-D1379.Magic objects effect changes in persons
+D1300.Magic object gives supernatural wisdom
+D1310.Magic object gives supernatural information
+D1330.Magic objects works physical change
+D1350.Magic object changes person's disposition
+D1360.Magic object effects temporary change in person
+D1380.Magic object protects
+D1390.Magic object rescues person
+D1400.-D1439.Magic object gives power over other persons
+D1400.Magic object overcomes person
+D1410.Magic object renders person helpless
+D1420.Magic object draws person (thing) to it
+D1430.Magic object pursues or captures
+D1440.Magic object gives power over animals
+D1450.Magic object furnishes treasure
+D1470.Magic object as provider
+D1500.Magic object controls disease
+D1520.Magic object affords miraculous transportation
+D1540.Magic object controls the elements
+D1550.Magic object miraculously opens and closes
+D1560.Magic object performs other services for owner
+D1600.-D1699. Characteristics of magic objects
+D1600.-D1649.Automatic magic objects
+D1600.Automatic object
+D1610.Magic speaking objects
+D1620.Magic automata
+D1640.Other automatic objects
+D1650.Other characteristics of magic objects
+D1700.-D2199.MAGIC POWERS AND MANIFESTATIONS
+D1710.-D1799. Possession and means of employment of magic powers
+D1710.Possession of magic powers
+D1720.Acquisition of magic powers
+D1740.Loss of magic powers
+D1750.Other characteristics of magic power
+D1760.Means of producing magic power
+D1800.-D2199. Manifestations of magic power
+D1800.-D1949.Lasting magic qualities
+D1810.Magic knowledge
+D1820.Magic sight and hearing
+D1830.Magic strength
+D1840.Magic invulnerability
+D1850.Immortality
+D1860.Magic beautification
+D1870.Magic hideousness
+D1880.Magic rejuvenation
+D1890.Magic aging
+D1900.Love induced by magic
+D1910.Magic memory
+D1920.Other permanent magic characteristics
+D1950.-D2049.Temporary magic characteristics
+D1960.Magic sleep
+D1980.Magic invisibility
+D2000.Magic forgetfulness
+D2020.Magic dumbness
+D2030.Other temporary magic characteristics
+D2050.-D2099.Destructive magic powers
+D2060.Death or bodily injury by magic
+D2070.Bewitching
+D2080.Magic used property
+D2090.Other destructive magic powers
+D2100.-D2149.Other manifestations of magic power
+D2100.Magic wealth
+D2120.Magic transportation
+D2140.Magic control of the elements
+D2150.-D2199.Miscellaneous magical manifestations 
+E. THE DEAD
+E0.-E199. Resuscitation
+E0.Resuscitation
+E10.Resuscitation by rough treatment
+E30.Resuscitation by arrangement of members
+E50.Resuscitation by magic
+E80.Water of life
+E90.Tree of life
+E100.Resuscitation by medicines
+E120.Other means of resuscitation
+E150.Circumstances of resuscitation
+E200.-E599.GHOSTS AND OTHER REVENANTS
+E200.-E299. Malevolent return from the dead
+E200.Malevolent return from the dead
+E210.Dead lover's malevolent return
+E220.Dead relative's malevolent return
+E230.Return from dead to inflict punishment
+E250.Bloodthirsty revenants
+E260.Other malevolent revenants
+E280.Ghosts haunt buildings
+E300.-E399. Friendly return from the dead
+E300.Friendly return from the dead
+E310.Dead lover's friendly return
+E320.Dead relative's friendly return
+E340.Return from dead to repay obligations
+E360.Other reasons for friendly return from the dead
+E380.Ghost summoned
+E390.Friendly return from the dead - miscellaneous
+E400.-E599. Ghost and revenants - miscellaneous
+E400.Ghosts and revenants - miscellaneous
+E410.The unquiet grave
+E420.Appearance of revenant
+E430.Defense against ghosts and the dead
+E440.Walking ghosts "laid"
+E460.Revenants in conflict
+E470.Intimate relations of dead and living
+E480.Abode of the dead
+E490.Meetings of the dead
+E500.Phantom hosts
+E510.Phantom sailors
+E520.Animal ghosts
+E530.Ghosts of objects
+E540.Miscellaneous actions of revenants
+E600.-E699. Reincarnation
+E600.Reincarnation
+E610.Reincarnation as animal
+E630.Reincarnation in object
+E650.Reincarnation: other forms
+E670.Repeated reincarnation
+E690.Reincarnation: miscellaneous
+E700.-E799. The soul
+E700.The soul
+E710.External soul
+E720.Soul leaves or enters the body
+E730.Soul in animal form
+E740.Other forms of the soul
+E750.Perils of the soul
+E760.Life index
+E770.Vital objects
+F. MARVELS
+F0.-F199. Otherworld Journeys
+F0.Journey to otherworld
+F10.-F79.The upper world
+F10.Journey to upper world
+F30.Inhabitant of upper world visits earth
+F50.Access to upper world
+F60.Transportation to or from upper world
+F80.-F109.The lower world
+F80.Journey to lower world
+F90.Access to lower world
+F100.Visit to lower world - miscellaneous motifs
+F110.-F199.Miscellaneous otherworlds
+F110.Journey to terrestrial otherworlds
+F130.Location of otherworld
+F140.Bounds of the otherworld
+F150.Access to otherworld
+F160.Nature of the otherworld
+F170.Otherworld - miscellaneous motifs
+F200.-F699.MARVELLOUS CREATURES
+F200.-F299. Fairies and elves
+F200.Fairies (elves)
+F210.Fairyland
+F220.Dwelling of fairies
+F230.Appearance of fairies
+F240.Possessions of fairies
+F250.Other characteristics of fairies
+F260.Behavior of fairies
+F300.-F399. Fairies and mortals
+F300.Marriage or liaison with fairy
+F310.Fairies and human children
+F320.Fairies carry people away to fairyland
+F330.Grateful fairies
+F340.Gifts from fairies
+F350.Theft from fairies
+F360.Malevolent or destructive fairies (pixies)
+F370.Visit to fairyland
+F380.Defeating or ridding oneself of fairies
+F390.Fairies - miscellaneous motifs
+F400.-F499. Spirits and demons
+F400.Spirits and demons (general)
+F420.Water-spirits
+F430.Weather-spirits
+F440.Vegetation-spirits
+F450.Underground-spirits
+F460.Mountain-spirits
+F470.Night-spirits
+F480.House-spirits
+F490.Other spirits and demons
+F500.-F599. Remarkable persons
+F500.Remarkable persons
+F510.Monstrous persons
+F530.Exceptionally large or small men
+F540.Remarkable physical organs
+F560.Unusual manner of life
+F570.Other extraordinary human beings
+F600.-F699. Persons with extraordinary powers
+F600.Person with extraordinary powers
+F610.Remarkably strong man
+F640.Extraordinary powers of perception
+F660.Remarkable skill
+F680.Other marvellous powers
+F700.-F899. Extraordinary places and things
+F700.Extraordinary places
+F710.Extraordinary bodies of water
+F720.Submarine and subterranean world
+F730.Extraordinary islands
+F750.Extraordinary mountains and other land features
+F760.Extraordinary cities
+F770.Extraordinary buildings and furnishings
+F790.Extraordinary sky and weather phenomena
+F800.Extraordinary rocks and stones
+F810.Extraordinary trees, plants, fruit, etc.
+F820.Extraordinary clothing and ornaments
+F830.Extraordinary weapons
+F840.Other extraordinary objects and places
+F900.-F1099. Extraordinary occurrences
+F910.Extraordinary swallowings
+F930.Extraordinary occurrences concerning seas or waters
+F940.Extraordinary underground (underwater) disappearances
+F950.Marvellous cures
+F960.Extraordinary nature phenomena - elements and weather
+F970.Extraordinary behavior of trees and plants
+F980.Extraordinary occurrences concerning animals
+F990.Inanimate objects act as if living
+F1010.Other extraordinary events
+G. OGRES
+G0.Ogres
+G10.-G399.KINDS OF OGRES
+G10.-G99. Cannibals and cannibalism
+G10.-G49.Regular cannibalism
+G10.Cannibalism
+G20.Ghouls
+G30.Person becomes cannibal
+G50.-G79.Occasional cannibalism
+G50.Occasional cannibalism
+G60.Human flesh eaten unwittingly
+G70.Occasional cannibalism - deliberate
+G80.Other motifs dealing with cannibals.
+G100.-G199. Giant ogres
+G100.Giant ogre
+G110.Possessions of giant ogres
+G120.Physical characteristics of giant ogres
+G130.Customs of giant ogres
+G150.Giant ogres - miscellaneous
+G200.-G299. Witches
+G200.Witch
+G210.Form of witch
+G220.Characteristics of witches
+G230.Habitat of witches
+G240.Habits of witches
+G250.Recognition of witches
+G260.Evil deeds of witches
+G270.Witch overcome or escaped
+G280.Witches - miscellaneous motifs
+G300.-G399. Other ogres
+G300.Other ogres
+G310.Ogres with characteristic methods
+G350.Animal ogres
+G360.Ogres with monstrous features
+G370.Ogres - miscellaneous
+G400.-G499. Falling into ogre's power
+G400.Person falls into ogre's power
+G410.Person betrayed into ogre's power
+G420.Capture by ogre
+G440.Ogre abducts person
+G450.Falling into ogre's power - miscellaneous
+G500.-G599. Ogre defeated
+G500.Ogre defeated
+G510.Ogre killed, maimed, or captured
+G520.Ogre deceived into self-injury
+G530.Ogre's relative aids hero
+G550.Rescue from ogre
+G560.Ogre deceived into releasing prisoner
+G570.Ogre overawed
+G580.Ogre otherwise subdued
+G600.-G699. Other ogre motifs
+G610.Theft from ogre
+G630.Characteristics of ogres
+G650.Unclassified ogre motifs
+H. TESTS
+H0.-H199. Identity tests: recognition
+H0.Identity tests
+H10.Recognition through common knowledge
+H20.Recognition by resemblance
+H30.Recognition through personal peculiarities
+H50.Recognition by bodily marks or physical attributes
+H80.-H149.Identification by tokens
+H80.Identification by tokens
+H90.Identification by ornaments
+H100.Identification by matching parts of divided token
+H110.Identification by cloth or clothing
+H120.Identification by tokens - miscellaneous
+H150.Circumstances of recognition
+H200.-H299. Tests of truth
+H210.-H239.Tests of guilt or innocence
+H210.Test of guilt or innocence
+H220.Ordeals
+H240.Other tests of truth
+H300.-H499. Marriage tests
+H300.Tests connected with marriage
+H310.-H359.Suitor tests
+H310.Suitor tests
+H360.-H399.Bride tests
+H360.Bride test
+H400.-H459.Chastity tests
+H400.Chastity test
+H410.Chastity test by magic objects or ordeals
+H430.Chastity index
+H440.Other indications of chastity
+H460.Wife tests
+H480.Father tests
+H490.Other marriage tests
+H500.-H899.TESTS OF CLEVERNESS
+H500.Test of cleverness or ability
+H510.Tests in guessing
+H530.-H899. Riddles
+H540.Propounding of riddles
+H570.Means of solving riddles
+H580.Enigmatic statements
+H600.Symbolic interpretations
+H620.The unsolved problem: enigmatic ending of tale
+H630.Riddles of the superlative
+H660.Riddles of comparison
+H680.Riddles of distance
+H690.Riddles of weight and measure
+H700.Riddles of numbers
+H710.Riddles of value
+H720.Metaphorical riddles
+H770.Riddles of explanation
+H790.Riddles based on unusual circumstances
+H810.Riddles based on the Bible or legend
+H840.Other riddles
+H900.-H1199.TESTS OF PROWESS: TASKS
+H900.-H999. Assignment and performance of tasks
+H900.-H949.Assignment of tasks
+H900.Tasks imposed
+H910.Assignment of tasks in response to suggestion
+H920.Assigners of tasks
+H940.Assignment of tasks - miscellaneous
+H1050.-H1089. Paradoxical tasks
+H1050.Paradoxical tasks
+H1090.Tasks requiring miraculous speed
+H1110.Tedious tasks
+H1130.Superhuman tasks
+H1150.Tasks: stealing, capturing, or slaying
+H1180.Miscellaneous tasks
+H1200.-H1399.TESTS OF PROWESS: QUESTS
+H1200.-H1249. Attendant circumstances of quests
+H1200.Quest
+H1210.Quest assigned
+H1220.Quest voluntarily undertaken
+H1240.Other circumstances of quests
+H1250.-H1399. Nature of quests
+H1250.-H1299.Quests to the other world
+H1250.Quest to the other world
+H1260.Quest to the upper world
+H1270.Quest to the lower world
+H1280.Quests to other realms
+H1290.Quests to the other world - miscellaneous motifs
+H1300.Quests for the unique
+H1320.Quest for marvellous objects or animals
+H1360.Quest for dangerous animals
+H1370.Miscellaneous quests
+H1400.-H1599.OTHER TESTS
+H1400.-H1449. Tests of fear
+H1400.Fear test
+H1410.Fear test: staying in frightful place
+H1420.Fearless traffic with devils
+H1430.Fearless traffic with ghosts
+H1440.The learning of fear
+H1450.-H1499. Tests of vigilance
+H1450.Vigilance test
+H1460.Test: vigil at tomb
+H1470.Other vigilance tests
+H1480.Accomplishment of vigilance test
+H1500.-H1549. Tests of endurance and power of survival
+H1500.Tests of endurance
+H1510.Tests of power to survive
+H1540.Contests in endurance
+H1550.-H1569. Tests of character
+H1550.Tests of character
+H1570.-H1599. Miscellaneous tests
+J. THE WISE AND THE FOOLISH
+J0.-J199. Acquisition and possession of wisdom (knowledge)
+J10.Wisdom (knowledge) acquired from experience
+J30.Wisdom (knowledge) acquired from inference
+J50.Wisdom (knowledge) acquired from observation
+J80.Wisdom (knowledge) taught by parable
+J100.Wisdom (knowledge) taught by necessity
+J120.Wisdom learned from children
+J130.Wisdom (knowledge) acquired from animals
+J140.Wisdom (knowledge) through education
+J150.Other means of acquiring wisdom (knowledge)
+J180.Possession of wisdom
+J200.-J1099.WISE AND UNWISE CONDUCT
+J200.-J499. Choices
+J200.Choices
+J210.Choice between evils
+J230.-J299.Real and apparent values
+J230.Choice: real and apparent values
+J240.Choice between useful and ornamental
+J260.Choice between worth and appearance
+J280.Quality preferred to quantity
+J300.-J329. Present values chosen
+J310.The present preferred to the past
+J320.Present values preferred to future
+J330.-J399.Gains and losses
+J340.Choices: little gain, big loss
+J350.Choices: small inconvenience, large gain
+J370.Choices: Important and unimportant work
+J390.Choices: kind strangers, unkind relatives
+J400.-J459.Choice of associates
+J400.Choice of associates
+J410.Association of equals and of unequals
+J420.Association of strong and weak
+J440.Association of young and old
+J450.Association of the good and the evil
+J460.Unnecessary choices
+J480.Other choices
+J500.-J599. Prudence and discretion
+J510.Prudence in ambition
+J530.Prudence in demands
+J550.Zeal - temperate and intemperate
+J570.Wisdom of deliberation
+J580.Wisdom of caution
+J600.-J799. Forethought
+J610.-J679.Forethought in conflict with others
+J620.Forethought in prevention of others' plans
+J640.Avoidance of others' power
+J670.Forethought in defences against others
+J680.Forethought in alliances
+J700.-J749.Forethought in provision for life
+J700.Forethought in provision for life (general)
+J710.Forethought in provision for food
+J730.Forethought in provision for clothing
+J740.Forethought in provision for shelter
+J750.-J799.Forethought - miscellaneous
+J800.-J849. Adaptability
+J810.Policy in dealing with the great
+J830.Adaptability to overpowering force
+J850.-J899.Consolation in misfortune
+J860.Consolation by a trifle
+J870.Consolation by pretending that one does not want the thing he cannot have
+J880.Consolation by thought of others worse placed
+J890.Consolation in misfortune - miscellaneous
+J900.-J999. Humility
+J910.Humility of the great
+J950.Presumption of the lowly
+J1000.-J1099. Other aspects of wisdom
+J1010.Value of industry
+J1020.Strength in unity
+J1030.Self-dependence
+J1040.Decisiveness of conduct
+J1050.Attention to warnings
+J1060.Miscellaneous aspects of wisdom
+J1100.-J1699.CLEVERNESS
+J1100.-J1249. Clever persons and acts
+J1110.Clever persons
+J1130.-J1199.Cleverness in the law court
+J1130.Cleverness in law court - general
+J1140.Cleverness in detection of truth
+J1150.Cleverness connected with the giving of evidence
+J1160.Clever pleading
+J1170.Clever judicial decisions
+J1180.Clever means of avoiding legal punishment
+J1190.Cleverness in the law court - miscellaneous
+J1210.-J1229.Clever man puts another out of countenance
+J1230.-J1249.Clever dividing
+J1250.-J1499. Clever verbal retorts (repartee)
+J1250.Clever verbal retorts - general
+J1260.Repartee based on church or clergy
+J1270.Repartee concerning the parentage of children
+J1280.Repartee with ruler (judge, etc.)
+J1290.Reductio ad absurdum of question or proposal
+J1300.Officiousness or foolish questions rebuked
+J1310.Repartee concerning wine
+J1320.Repartee concerning drunkenness
+J1330.Repartee concerning beggars
+J1340.Retorts from hungry persons
+J1350.Rude retorts
+J1370.Cynical retorts concerning honesty
+J1380.Retorts concerning debts
+J1390.Retorts concerning thefts
+J1400.Repartee concerning false reform
+J1410.Repartee concerning fatness
+J1420.Animals retort concerning their dangers
+J1430.Repartee concerning doctors and patients
+J1440.Repartee - miscellaneous
+J1500.-J1649. Clever practical retorts
+J1500.Clever practical retort
+J1510.The cheater cheated
+J1530.One absurdity rebukes another
+J1540.Retorts between husband and wife
+J1550.Practical retorts: borrowers and lenders
+J1560.Practical retorts: hosts and guests
+J1580.Practical retorts connected with almsgiving
+J1600.Practical retorts - miscellaneous
+J1650.-J1699. Miscellaneous clever acts
+J1700.-J2749.FOOLS (AND OTHER UNWISE PERSONS)
+J1700.-J1729. Fools
+J1710.-J1729.Association with fools
+J1730.-J1749. Absurd ignorance
+J1750.-J1849. Absurd misunderstandings
+J1750.-J1809.One thing mistaken for another
+J1750.One animal mistaken for another
+J1760.Animal or person mistaken for something else
+J1770.Objects with mistaken identity
+J1780.Things thought to be devils, ghosts, etc.
+J1790.Shadow mistaken for substance
+J1800.One thing mistaken for another - miscellaneous
+J1810.Physical phenomena misunderstood
+J1820.Inappropriate action from misunderstanding
+J1850.-J1999. Absurd disregard of facts
+J1850.-J1899.Animals or objects treated as if human
+J1850.Gift or sale to animal (or object)
+J1860.Animal or object absurdly punished
+J1870.Absurd sympathy for animals or objects
+J1880.Animals or objects treated as if human - miscellaneous
+J1900.Absurd disregard or ignorance of animal's nature or habits
+J1910.Fatal disregard of anatomy
+J1920.Absurd searches for the lost
+J1930.Absurd disregard of natural laws
+J1960.Other absurd disregard of facts
+J2000.-J2049. Absurd absent-mindedness
+J2010.Uncertainty about own identity
+J2020.Inability to find own members, etc.
+J2030.Absurd inability to count
+J2040.Absurd absent-mindedness - miscellaneous
+J2050.-J2199. Absurd short-sightedness
+J2050.Absurd short-sightedness
+J2060.Absurd plans: air castles
+J2070.Absurd wishes
+J2080.Foolish bargains
+J2100.Remedies worse than the disease
+J2120.Disregard of danger to objects (or animals)
+J2130.Foolish disregard of personal danger
+J2160.Other short-sighted acts
+J2200.-J2259. Absurd lack of logic
+J2200.Absurd lack of logic - general
+J2210.Logical absurdity based upon certain false assumptions
+J2220.Other logical absurdities
+J2260.-J2299. Absurd scientific theories
+J2260.Absurd scientific theories - general
+J2270.Absurd astronomical theories
+J2280.Other absurd scientific theories
+J2300.-J2349. Gullible fools
+J2310.Nature of gullibility
+J2350.-J2369. Talkative fools
+J2370.-J2399. Inquisitive fools
+J2400.-J2449. Foolish imitation
+J2450.Literal fool
+J2460.Literal obedience
+J2470.Metaphors literally interpreted
+J2490.Literal fool - miscellaneous
+J2500.-J2549. Foolish extremes
+J2550.-J2599. Thankful fools
+J2600.-J2649. Cowardly fools
+J2650.-J2699. Bungling fools
+J2700.-J2749. The easy problem made hard
+J2750.-J2799. Other aspects of wisdom or foolishness
+K. DECEPTIONS
+K0.-K99. Contests won by deception
+K0.Contest won by deception - general
+K10.Athletic contest won by deception
+K30.Hunting contest won by deception
+K40.Labor contest won by deception
+K50.Endurance contest won by deception
+K60.Absurd contest won by deception
+K70.Contest in strength won by deception
+K80.Contests in other physical accomplishments won by deception
+K90.Other contests won by deception
+K100.-K299. Deceptive bargains
+K100.Deceptive bargain
+K110.-K149.Sale of worthless articles
+K110.Sale of pseudo-magic objects
+K120.Sale of false treasure
+K130.Sale of worthless animals
+K140.Sale of other worthless objects
+K150.Sale of worthless services
+K170.Deception through pseudo-simple bargain
+K200.-K249.Deception in payment of debt
+K200.Deception in payment of debt
+K210.Devil cheated of his promised soul
+K220.Payment precluded by terms of the bargain
+K230.Other deceptions in the payment of debt
+K250.Other deceptive bargains
+K300.-K499. Thefts and cheats
+K300.Thefts and cheats - general
+K310.-K439.Thefts
+K310.Means of entering house or treasury
+K330.Means of hoodwinking the guardian or owner
+K360.Other means of theft
+K400.Thief escapes detection
+K420.Thief loses his goods or is detected
+K440.-K499.Other cheats
+K500.-K699. Escape be deception
+K500.Escape from death or danger by deception
+K510.Death order evaded
+K520.Death escaped through disguise, shamming, or substitution
+K540.Escape by overawing captor
+K550.Escape by false plea
+K580.Captor persuaded into illusory punishment
+K600.Murderer or captor otherwise beguiled
+K620.Escape by deceiving the guard
+K630.Escape by disarming (making pursuit difficult)
+K640.Escape by help of confederate
+K650.Other means of escape
+K700.-K799. Capture by deception
+K700.Capture by deception
+K710.Victim enticed into voluntary captivity or helplessness
+K730.Victim trapped
+K750.Capture by decoy
+K770.Other deceptive captures
+K800.-K999. Fatal deception
+K800.Fatal deception
+K810.Fatal deception into trickster's power
+K840.Deception into fatal substitution
+K850.Fatal deceptive game
+K870.Fatal deception by narcotic (intoxication)
+K890.Dupe tricked into killing himself
+K910.Murder by strategy
+K930.Treacherous murder of enemy's children or charges
+K940.Deception into killing own children or animals
+K950.Various kinds of treacherous murder
+K960.Other fatal deceits
+K1000.-K1199. Deception into self-injury
+K1000.Deception into self-injury
+K1010.Deception through false doctoring
+K1020.Deception into disastrous attempt to procure food
+K1040.Dupe otherwise persuaded to voluntary self-injury
+K1080.Persons duped into injuring each other
+K1110.Deceptions into self-injury - miscellaneous
+K1200.-K1299. Deception into humiliating position
+K1200.Deception into humiliating position
+K1210.Humiliated or baffled lovers
+K1240.Deception into humiliating position - miscellaneous
+K1300.-K1399. Seduction or deceptive marriage
+K1300.Seduction
+K1310.Seduction by disguise or substitution
+K1330.Girl tricked into man's room (or power)
+K1340.Entrance into girl's (man's) room (bed) be trick
+K1350.Woman persuaded (or wooed) by trick
+K1380.Seduction - miscellaneous
+K1400.-K1499. Dupe's property destroyed
+K1400.Dupe's property destroyed
+K1410.Dupe's goods destroyed
+K1440.Dupe's animals destroyed or maimed
+K1460.Members of dupe's family killed
+K1500.-K1599. Deceptions connected with adultery
+K1500.Deception connected with adultery
+K1510.Adulteress outwits husband
+K1550.Husband outwits adulteress and paramour
+K1570.Trickster outwits adulteress and paramour
+K1580.Other deceits connected with adultery
+K1600.-K1699. Deceiver falls into own trap
+K1600.Deceiver falls into own trap
+K1610.Deceiver falls into his own trap - miscellaneous incidents
+K1700.-K2099.DECEPTION THROUGH SHAMS
+K1700.-K1799. Deception through bluffing
+K1700.Deception through bluffing
+K1710.Ogre (large animal) overawed
+K1760.Other bluffs
+K1800.-K1899. Deception by disguise or illusion
+K1800.Deception by disguise or illusion
+K1810.Deception by disguise
+K1840.Deception by substitution
+K1860.Deception by feigned death (sleep)
+K1870.Illusions
+K1900.-K1999. Impostures
+K1900.Impostures
+K1910.Marital impostures
+K1920.Substituted children
+K1930.Treacherous impostors
+K1950.Sham prowess
+K1970.Sham miracles
+K1980.Other impostures
+K2000.-K2099. Hypocrites
+K2000.Hypocrites
+K2010.Hypocrite pretends friendship but attacks
+K2030.Double dealers
+K2050.Pretended virtue
+K2060.Detection of hypocrisy
+K2100.-K2199. False accusations
+K2100.False accusations
+K2110.Slanders
+K2130.Trouble-makers
+K2150.Innocent made to appear guilty
+K2200.-K2299. Villains and traitors
+K2200.Villains and traitors
+K2210.Treacherous relatives
+K2220.Treacherous rivals
+K2230.Treacherous lovers
+K2240.Treacherous officers and tradesmen
+K2250.Treacherous servants
+K2260.Dark traitors
+K2270.Deformed villains
+K2280.Treacherous churchmen
+K2290.Other villains and traitors
+K2300.-K2399. Other deceptions
+K2300.Other deceptions
+K2310.Deception by equivocation
+K2320.Deception by frightening
+K2350.Military strategy
+K2370.Miscellaneous deceptions
+L. REVERSAL OF FORTUNE
+L0.-L99. Victorious youngest child
+L0.Victorious youngest child
+L10.Victorious youngest son
+L50.Victorious youngest daughter
+L100.-L199. Unpromising hero (heroine)
+L100.Unpromising hero (heroine)
+L110.Types of unpromising heroes (heroines)
+L130.Abode of unpromising hero (heroine)
+L140.The unpromising surpasses the promising
+L160.Success of the unpromising hero (heroine)
+L200.-L299. Modesty brings reward
+L200.Modesty brings reward
+L210.Modest choice best
+L220.Modest request best
+L250.Modest business plans best
+L300.-L399. Triumph of the weak
+L300.Triumph of the weak
+L310.Weak overcomes strong in conflict
+L330.Easy escape of weak (small)
+L350.Mildness triumphs over violence
+L390.Triumph of the weak - miscellaneous
+L400.-L499. Pride brought low
+L400.Pride brought low
+L410.Proud ruler (deity) humbled
+L420.Overweening ambition punished
+L430.Arrogance repaid
+L450.Proud animal less fortunate than humble
+L460.Pride brought low - miscellaneous
+M. ORDAINING THE FUTURE
+M0.-M99. Judgements and decrees
+M0.Judgements and decrees
+M10.Irrevocable judgements
+M20.Short-sighted judgements
+M50.Other judgements and decrees
+M90.Judgements and decrees - miscellaneous motifs
+M100.-M199. Vows and oaths
+M100.Vows and oaths
+M110.Taking of vows and oaths
+M120.Vows concerning personal appearance
+M130.Vows concerning sex
+M150.Other vows and oaths
+M200.-M299. Bargains and promises
+M200.Bargains and promises
+M210.Bargain with devil
+M220.Other bargains
+M250.Promises connected with death
+M260.Other promises
+M290.Bargains and promises - miscellaneous
+M300.-M399. Prophecies
+M300.Prophecies
+M310.Favorable prophecies
+M340.Unfavorable prophecies
+M360.Other prophecies
+M370.Vain attempts to escape fulfilment of prophecy
+M390.Prophecies - miscellaneous motifs
+M400.-M499. Curses
+M400.Curses
+M410.Pronouncement of curses
+M420.Enduring and overcoming curses
+M430.Curses on persons
+M460.Curses on families
+M490.Curses - miscellaneous
+N. CHANCE AND FATE
+N0.-N99. Wagers and gambling
+N0.Wagers and gambling
+N10.Wagers on wives, husband, or servants
+N50.Other wagers
+N90.Wagers and gambling - miscellaneous
+N100.-N299. The ways of luck and fate
+N100.-N169.Nature of luck and fate
+N100.Nature of luck and fate
+N110.Luck and fate personified
+N120.Determination of luck or fate
+N130.Changing of luck or fate
+N140.Nature of luck and fate - miscellaneous motifs
+N170.The capriciousness of luck
+N200.The good gifts of fortune
+N250.Persistent bad luck
+N270.Crime inevitably comes to light
+N300.-N399. Unlucky accidents
+N300.Unlucky accidents
+N310.Accidental separations
+N320.Person unwittingly killed
+N330.Accidental killing or death
+N340.Hasty killing or condemnation
+N350.Accidental loss of property
+N360.Man unwittingly commits crime
+N380.Other unlucky accidents.
+N400.-N699.LUCKY ACCIDENTS
+N410.-N439. Lucky business ventures
+N440.-N499. Valuable secrets learned
+N440.Valuable secrets learned
+N450.Secrets overheard
+N500.-N599. Treasure trove
+N500.Treasure trove
+N510.Where treasure is found
+N530.Discovery of treasure
+N550.Unearthing hidden treasure
+N570.Guardian of treasure
+N590.Treasure trove - miscellaneous motifs
+N600.-N699. Other lucky accidents
+N610.Accidental discovery of crime
+N620.Accidental success in hunting or fishing
+N630.Accidental acquisition of treasure or money
+N640.Accidental healing
+N650.Life saved by accident
+N680.Lucky accidents - miscellaneous
+N700.-N799. Accidental encounters
+N700.Accidental encounters
+N710.Accidental meeting of hero and heroine
+N730.Accidental reunion of families
+N760.Other accidental encounters
+N770.Experiences leading to adventures
+N800.-N899. Helpers
+N800.Helpers
+N810.Supernatural helpers
+N820.Human helpers
+P. SOCIETY
+P0.-P99. Royalty and nobility
+P0.Royalty and nobility
+P10.Kings
+P20.Queens
+P30.Princes
+P40.Princesses
+P50.Noblemen (knights)
+P60.Noble (gentle) ladies
+P90.Royalty and nobility - miscellaneous
+P100.-P199. Other social orders
+P110.Royal ministers
+P120.Church dignitaries
+P150.Rich men
+P160.Beggars
+P170.Slaves
+P190.Other social orders - miscellaneous
+P200.-P299. The family
+P200.The family
+P210.Husband and wife
+P230.Parents and children
+P250.Brothers and sisters
+P260.Relations by law
+P270.Foster relatives
+P280.Steprelatives
+P290.Other relatives
+P300.-P399. Other social relationships
+P310.Friendship
+P320.Hospitality
+P340.Teacher and pupil
+P360.Master and servant
+P400.-P499. Trades and professions
+P400.Trades and professions
+P410.Laborers
+P420.Learned professions
+P430.Financiers and merchants
+P440.Artisans
+P460.Other trades and professions
+P500.-P599. Government
+P500.Government
+P510.Law courts
+P550.Military affairs
+P600.-P699. Customs
+P600.Customs
+P700.-P799. Society - miscellaneous motifs
+P710.Nations
+Q. REWARDS AND PUNISHMENTS
+Q0.Rewards and punishments
+Q10.-Q99. Deeds rewarded
+Q10.Deeds rewarded
+Q20.Piety rewarded
+Q40.Kindness rewarded
+Q60.Other good qualities rewarded
+Q80.Rewards for other causes
+Q100.-Q199. Nature of rewards
+Q100.Nature of rewards
+Q110.Material rewards
+Q140.Miraculous or magic rewards
+Q150.Immunity from disaster as reward
+Q170.Religious rewards
+Q190.Rewards - miscellaneous
+Q200.-Q399. Deeds punished
+Q200.Deeds punished
+Q210.Crimes punished
+Q220.Impiety punished
+Q240.Sexual sins punished
+Q260.Deceptions punished
+Q270.Misdeeds concerning property punished
+Q280.Unkindness punished
+Q300.Contentiousness punished
+Q320.Evil personal habits punished
+Q330.Overweening punished
+Q340.Meddling punished
+Q380.Deeds punished - miscellaneous
+Q400.-Q599. Kinds of punishment
+Q400.Kinds of punishment - general
+Q410.Capital punishment
+Q430.Abridgement of freedom as punishment
+Q450.Cruel punishments
+Q470.Humiliating punishments
+Q500.Tedious punishments
+Q520.Penances
+Q550.Miraculous punishments
+Q560.Punishments in hell
+Q570.Punishment and remission
+Q580.Punishment fitted to crime
+Q590.Miscellaneous punishments
+R. CAPTIVES AND FUGITIVES
+R0.-R99. Captivity
+R0.Captivity
+R10.Abduction
+R40.Places of captivity
+R50.Conditions of captivity
+R70.Behavior of captives
+R100.-R199. Rescues
+R100.Rescues
+R110.Rescue of captive
+R130.Rescue of abandoned or lost persons
+R150.Rescuers
+R170.Rescue - miscellaneous motifs
+R200.-R299. Escapes and pursuits
+R200.Escapes and pursuits
+R210.Escapes
+R220.Flights
+R260.Pursuits
+R300.-R399. Refuges and recapture
+R300.Refuges and recapture
+R310.Refuges
+R350.Recapture of fugitive
+S. UNNATURAL CRUELTY
+S0.-S99. Cruel relatives
+S0.Cruel relatives
+S10.Cruel parents
+S20.Cruel children and grandchildren
+S30.Cruel step- and foster relatives
+S40.Cruel grandparents
+S50.Cruel relatives-in-law
+S60.Cruel spouse
+S70.Other cruel relatives
+S100.-S199. Revolting murders or mutilations
+S100.Revolting murders or mutilations
+S110.Murders
+S140.Cruel abandonments and exposures
+S160.Mutilations
+S180.Wounding or torturing
+S200.-S299. Cruel sacrifices
+S200.Cruel sacrifices
+S210.Children sold or promised
+S220.Reasons for promise (sale) of child
+S240.Children unwittingly promised (sold)
+S250.Saving the promised child
+S260.Sacrifices
+S300.-S399. Abandoned or murdered children
+S300.Abandoned or murdered children
+S310.Reasons for abandonment of children
+S330.Circumstances of murder or exposure of children
+S350.Fate of abandoned child
+S400.-S499. Cruel persecutions
+S400.Cruel persecutions
+S410.Persecuted wife
+S430.Disposal of cast-off wife
+S450.Fate of outcast wife
+S460.Other cruel persecutions
+T. SEX
+T0.-T99. Love
+T0.Love
+T10.Falling in love
+T30.Lovers' meeting
+T50.Wooing
+T70.The scorned lover
+T80.Tragic love
+T90.Love - miscellaneous motifs
+T100.-T199. Marriage
+T100.Marriage
+T110.Unusual marriage
+T130.Marriage customs
+T150.Happenings at weddings
+T160.Consummation of marriage
+T200.-T299. Married life
+T200.Married life
+T210.Faithfulness in marriage
+T230.Faithlessness in marriage
+T250.Characteristics of wives and husbands
+T280.Other aspects of married life
+T300.-T399. Chastity and celibacy
+T300.Chastity and celibacy
+T310.Celibacy and continence
+T320.Escape from undesired lover
+T330.Anchorites under temptation
+T350.Chaste sleeping together
+T360.Chastity and celibacy - miscellaneous
+T400.-T499. Illicit sexual relations
+T400.Illicit sexual relations
+T410.Incest
+T450.Prostitution and concubinage
+T460.Sexual perversions
+T470.Illicit sexual relations - miscellaneous motifs
+T500.-T599. Conception and birth
+T500.Conception and birth
+T510.Miraculous conception
+T540.Miraculous birth
+T550.Monstrous births
+T570.Pregnancy
+T580.Childbirth
+T590.Conception and birth - miscellaneous motifs
+T600.-T699. Care of children
+T600.Care of children
+T610.Nurture and growth of children
+T640.Illegitimate children
+T680.Care of children - miscellaneous motifs
+U. THE NATURE OF LIFE
+U0.-U99. Life's inequalities
+U0.Life's inequalities
+U10.Justice and injustice
+U30.Rights of the strong
+U60.Wealth and poverty
+U100.-U299. Nature of life - miscellaneous motifs
+U110.Appearances deceive
+U120.Nature will show itself
+U130.The power of habit
+U140.One man's food is another man's poison
+U150.Indifference of the miserable
+U160.Misfortune with oneself to blame the hardest
+U170.Behavior of the blind
+U180.In vino veritas
+U210.Bad ruler, bad subject
+U220.Forced peace valueless
+U230.The nature of sin
+U240.Power of mind over body
+U250.Shortness of life
+U260.Passage of time
+U270.Security breeds indifference
+V. RELIGION
+V0.-V99. Religious services
+V0.Religious services
+V10.Religious sacrifices
+V20.Confession of sins
+V30.Sacrament
+V40.Mass
+V50.Prayer
+V60.Funeral rites
+V70.Religious fasts and feasts
+V80.Religious services - miscellaneous
+V100.-V199. Religious edifices and objects
+V100.Religious edifices and objects
+V110.Religious buildings
+V120.Images
+V130.Other sacred objects connected with worship
+V140.Sacred relics
+V150.Sacred objects - miscellaneous
+V200.-V299. Sacred persons
+V200.Sacred persons
+V210.Religious founders
+V220.Saints
+V230.Angels
+V250.The Virgin Mary
+V290.Other sacred persons
+V300.-V399. Religious beliefs
+V300.Religious beliefs
+V310.Particular dogmas
+V320.Heretics
+V330.Conversion from one religion to another
+V340.Miracle manifested to non-believers
+V350.Conflicts between religions
+V360.Christian and Jewish traditions about each other
+V380.Religious beliefs - miscellaneous
+W. TRAITS OF CHARACTER
+W0.-W99. Favorable traits of character
+W0. Favorable traits of character
+W10. Kindness
+W20. Other favorable traits of character
+W100.-W199. Unfavorable traits of character
+W100.Unfavorable traits of character
+W110.Unfavorable traits of character - personal
+W150.Unfavorable traits of character - social
+W200.-W299. Traits of character - miscellaneous
+W200.Traits of character - miscellaneous
+X. HUMOR
+X0.-X99. Humor of discomfiture
+X0.Humor of discomfiture
+X100.-X199. Humor of disability
+X100.Humor of disability
+X110.Humor of deafness
+X120.Humor of bad eyesight
+X130.Other physical disabilities
+X200.-X599.HUMOR OF SOCIAL CLASSES
+X200.-X299. Humor dealing with tradesmen
+X200.Humor dealing with tradesmen
+X210.Jokes about millers
+X220.Jokes about tailors
+X230.Jokes about butchers
+X240.Jokes about cobblers (shoemakers)
+X250.Jokes about other artisans and tradesmen
+X300.-X499. Humor dealing with professions
+X300.Humor dealing with professions
+X310.Jokes on lawyers
+X330.Jokes on magistrates
+X350.Jokes on teachers
+X370.Jokes on scholars
+X410.Jokes on parsons
+X460.Humor concerning other professions
+X500.-X599. Humor concerning other social classes
+X500.Humor concerning other social classes
+X510.Jokes concerning usurers
+X520.Jokes concerning prostitutes
+X530.Jokes concerning beggars
+X540.Jokes on madmen
+X550.Jokes on secret societies
+X600.-X699. Humor concerning races or nations
+X600.Humor concerning races or nations
+X610.Jokes concerning Jews
+X650.Jokes concerning other races or nations
+X680.Jokes concerning various cities
+X700.-X799. Humor concerning sex
+X700.Humor concerning sex
+X750.Jokes on old maids
+X760.Jokes on courtship
+X800.-X899. Humor based on drunkenness
+X800.Humor based on drunkenness
+X900.-X1899.HUMOR OF LIES AND EXAGGERATIONS
+X910.-X1099. Lie: the remarkable man
+X910.-X959.Lie: the remarkable man: his birth, growth, death, physical powers, strength
+X910.Lie: the remarkable man
+X920.Lie: the large man
+X930.Lie: remarkable person's physical powers and habits
+X940.Lie: remarkably strong man
+X960.-X1019.Lie: remarkable person's skills
+X960.Lie: remarkable person's skills
+X980.Lie: occupational or professional skills
+X1010.Lie: remarkable mental skills
+X1020.-X1079.Remarkable man's extraordinary possessions
+X1020.Lie: remarkable possessions of remarkable man
+X1030.Lie: remarkable buildings
+X1060.Lie: other possessions of remarkable man
+X1070.Extraordinary man's family
+X1080.-X1099.Lie: occupations of remarkable man
+X1100.-X1199. Lie: great hunters and fishermen
+X1100.Lie: the remarkable hunter
+X1110.Lie: the wonderful hunt
+X1120.Lie: the great marksman
+X1130.Lie: hunter's unusual experiences
+X1150.Lies about fishing
+X1200.-X1399. Lies about animals
+X1200.Lie: remarkable animals
+X1210.Lies about mammals
+X1250.Lies about birds
+X1280.Lies about insects
+X1300.Lies about fish
+X1320.Lies about reptiles
+X1340.Lie: extraordinary amphibia and other animals
+X1370.Lies about imaginary animals
+X1400.-X1499. Lies about plants, fruits, vegetables and trees
+X1400.Lies about plants, fruits, vegetables and trees
+X1410.Lies about fruits
+X1420.Lies about vegetables
+X1450.Lies about field crops
+X1470.Lies about trees
+X1480.Lies about flowers
+X1490.Lie: miscellaneous plant motifs
+X1500.-X1599. Lies about geography and topography
+X1500.Lies about geography and topography
+X1510.Lies about land features
+X1520.Lies about mountains and hills
+X1530.Lies about remarkable soil
+X1540.Lies about water features
+X1550.Geography and topography - miscellaneous motifs
+X1560.Lies about cities
+X1600.-X1699. Lies about weather and climate
+X1600.Lies about weather and climate
+X1610.Lies about winds and storms
+X1620.Lies about cold weather
+X1630.Lies about hot weather
+X1640.Lies about dry weather
+X1650.Lies about precipitation and dampness
+X1660.Lies about climate
+X1700.-X1799. Lies: logical absurdities
+X1700.Lies: logical absurdities
+X1710.Lies about numbers
+X1720.Absurd disregard of anatomy
+X1740.Absurd disregard of natural laws
+X1750.Absurd disregard of the nature of objects
+X1760.Absurd disregard of the nature of non-material things
+X1780.Absurdity based on the nature of the object
+X1790.Other logical absurdities
+X1800.-X1899. Miscellaneous lies and exaggerations
+X1800.Miscellaneous lies and exaggerations
+X1810.Tall tales about miscellaneous objects
+X1850.Other tall tales
+Z. MISCELLANEOUS GROUPS OF MOTIFS
+Z0.-Z99. Formulas
+Z0.Formulas
+Z10.Formulistic framework for tales
+Z20.-Z59.Cumulative tales
+Z20.Cumulative tales
+Z30.Chains involving a single scene or event
+Z40.Chains with interdependent members.
+Z50.Cumulative tales - miscellaneous
+Z60.Other formulistic motifs
+Z100.-Z199. Symbolism
+Z100.Symbolism
+Z110. Personifications
+Z140.Color symbolism
+Z150.Other symbols
+Z200.-Z299. Heroes
+Z200.Heroes
+Z210.Brothers as heroes
+Z230.Extraordinary exploits of her
+Z300.-Z399. Unique exceptions
+Z300.Unique exceptions
+Z310.Unique vulnerability
+Z320.Object will fit only one thing (or person)
+Z350.Other unique exceptions
