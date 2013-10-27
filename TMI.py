@@ -8,7 +8,7 @@ from itertools import ifilter
 from operator import itemgetter
 
 from pattern.en import parsetree, wordnet
-from pattern.search import taxonomy, search, Classifier
+from pattern.search import taxonomy, search, Classifier, Pattern
 
 
 # /////////////////////////////////////////////////////////////////////////////
@@ -19,8 +19,9 @@ class WordNetClassifier(Classifier):
     
     def __init__(self, wordnet=None):
         if wordnet is None:
-            try: from en import wordnet
-            except:
+            try: 
+                from en import wordnet
+            except ImportError:
                 pass
         Classifier.__init__(self, self._parents, self._children)
         self.wordnet = wordnet
