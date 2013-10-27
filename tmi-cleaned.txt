@@ -12033,7 +12033,6 @@ D1101.5.	Magic scabbard.
 D1101.6.	Magic yoke.
 D1102.	Magic trident.
 D1110.	Magic conveyances.
-D1523.2.6.	Bundle of wood magically acts as riding-horse.
 D1111.	Magic carriage.
 D1111.1.	Carriage produced by magic.
 D1112.	Magic cart.
@@ -33686,7 +33685,6 @@ K550.	Escape by false plea
 K550.1.	Escape by equivocal oath.
 K551.	Respite from death granted until particular act is performed.
 K551.1.	Respite from death granted until prayer is finished.
-K561.1.1.	Cat fails to be beguiled into releasing mouse.
 K551.1.1.	Respite from death granted until confession is made.
 K551.1.2.	Respite from death until mass is said.
 K551.2.	Respite from death until prisoner has finished drinking his glass.
@@ -37942,7 +37940,7 @@ N342.5.	Angry brother kills husband, thinking latter had killed wife (sister) an
 N342.6.	Woman mistakenly accused of cannibalism.
 N343.	Lover kills self believing his mistress dead.
 N343.1.	Mistress kills self, believing her lover dead.
-N343.2.1.	Wife dies, believing husband dead.
+N343.2.	Wife dies, believing husband dead.
 N343.3.	Woman feigns death to meet exiled lover.
 N343.4.	Lover commits suicide on finding beloved dead.
 N344.	Father kills self believing that son is dead.

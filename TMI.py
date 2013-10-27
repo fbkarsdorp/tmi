@@ -8,34 +8,36 @@ from itertools import ifilter
 from operator import itemgetter
 
 from pattern.en import parsetree, wordnet
-from pattern.search import taxonomy, WordNetClassifier, search
+from pattern.search import taxonomy, search, Classifier
+
+
+# /////////////////////////////////////////////////////////////////////////////
+# Wordnet Classifier used for searching.
+# /////////////////////////////////////////////////////////////////////////////
+
+class WordNetClassifier(Classifier):
+    
+    def __init__(self, wordnet=None):
+        if wordnet is None:
+            try: from en import wordnet
+            except:
+                pass
+        Classifier.__init__(self, self._parents, self._children)
+        self.wordnet = wordnet
+
+    def _children(self, word, pos="NN"):
+        try: 
+            return [w.senses[0] for w in self.wordnet.synsets(word, pos)[0].hyponyms()]
+        except (KeyError, IndexError):
+            pass
+        
+    def _parents(self, word, pos="NN"):
+        try: 
+            return [w.senses[0] for w in self.wordnet.synsets(word, pos)[0].hypernyms()]
+        except (KeyError, IndexError):
+            pass
 
 taxonomy.classifiers.append(WordNetClassifier(wordnet))
-
-# /////////////////////////////////////////////////////////////////////////////
-# Data structure of nodes
-# /////////////////////////////////////////////////////////////////////////////
-
-class Motif(object):
-    def __init__(self, index, description):
-        self.index = index
-        self.description = description
-        self._parsetree = None
-
-    def __hash__(self):
-        return hash(self.index)
-
-    def __repr__(self):
-        return '<Motif(%s)>' % self.index
-
-    def __str__(self):
-        return '%s: %s' % (self.index, self.description)
-
-    @property 
-    def parsetree(self):
-        if self._parsetree is None:
-            self._parsetree = parsetree(self.description)
-        return self._parsetree
 
 # /////////////////////////////////////////////////////////////////////////////
 # Interface classes on the TMI
@@ -90,9 +92,9 @@ class TMI(nx.DiGraph):
         return self.lowest_common_subsumer(a, b)[1] 
 
     def search(self, pattern):
-        for node in self.nodes():
-            if search(pattern, node.parsetree)
-                yield node
+        for node, data in self.nodes(data=True):
+            if search(pattern, data['parse']):
+                yield node, data['data']
 
 
 # /////////////////////////////////////////////////////////////////////////////
@@ -110,7 +112,7 @@ def compile_index(index):
     G = TMI() # initialize a Directed Graph
     for entry in index:
         motif = (number, description) = split_index_entry(entry)
-        G.add_node(number, data=description, anchor=True)
+        G.add_node(number, data=description, parse=parsetree(description, lemmata=True), anchor=True)
         if main_category_motif(motif):
             # we found a new anchor point
             header, headerchange = number, True
@@ -135,7 +137,7 @@ def compile_index(index):
             while history and integer(number) > integer(history[-1].split('.-')[1]):
                 history.pop()
             G.add_edge(history[-1], number)
-    G.add_node('ROOT', data='Unobserved ROOT node of the TMI')
+    G.add_node('ROOT', data='Unobserved ROOT node of the TMI', parse='')
     # connect all header categories to an fictious root node.
     for header in headers:
         G.add_edge('ROOT', header)
@@ -174,7 +176,7 @@ def add_motifs_to_index(motifs, index):
         # it could be we have already seen this motif in the index
         # if so, continue to the next
         if number in index: continue
-        index.add_node(number, data=description)
+        index.add_node(number, data=description, parse=parsetree(description, lemmata=True))
         if len(number.split('.')) is 1: # non-terminal node
             # try to match the motif to one of the motifs in the index
             if rounddown(number, 10) != number and rounddown(number, 10) in index:
@@ -184,6 +186,7 @@ def add_motifs_to_index(motifs, index):
                 if integer(anchor) > integer(rounddown(number)):
                     index.add_edge(anchor, number)
                 else:
+                    assert rounddown(number) in index, number
                     index.add_edge(rounddown(number), number)
             # if still no luck... This means trouble
             else:
