@@ -8,14 +8,14 @@ import cPickle as pickle
 #flask application
 app = Flask(__name__)
 
+with open("tmi.cPickle") as inf:
+	tmi = pickle.load(inf)
+
 # views:
 @app.route('/api',methods=['GET', 'POST'])
 def api():
 
 	query = request.form['q']
-	
-	with open("tmi.cPickle") as inf:
-		tmi = pickle.load(inf)
 
 	results = ""
 	for match in tmi.search(query):
