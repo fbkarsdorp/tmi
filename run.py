@@ -2,21 +2,21 @@
 
 import os
 from flask import Flask, request, jsonify
-from tmi import find
 import cPickle as pickle
+
+from pattern.en import Sentence
+from tmi import find
 
 
 #flask application
 app = Flask(__name__)
 
-with open("tmi.cPickle") as inf:
-    tmi = []
-    while True:
-        try:
-            motif = pickle.load(inf)
-            tmi.append(motif)
-        except EOFError:
-            break
+tmi = []
+for line in open('tmi.txt'):
+    line = line.strip().split('\t')
+    if len(line) == 3:
+        motif, description, parse = line[0], line[1], Sentence(line[2])
+        tmi.append((motif, description, parse))
 
 # views:
 @app.route('/api',methods=['GET', 'POST'])
