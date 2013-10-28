@@ -37,7 +37,7 @@ if __name__ == '__main__':
         index = add_motifs(inf, index)
     with open('tmi.txt', 'w') as out:
         for motif, (description, parse) in sorted(index.iteritems()):
-            out.write(u'{}\t{}\t{}\n'.format(motif, description, parse).encode('utf-8'))
+            out.write('%s\t%s\t%s\n' % (motif.encode('utf-8'), description.encode('utf-8'), parse.encode('utf-8')))
 
 
 
