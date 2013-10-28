@@ -8,35 +8,10 @@ from itertools import ifilter
 from operator import itemgetter
 
 from pattern.en import parsetree, wordnet
-from pattern.search import taxonomy, search, Classifier, Pattern
+from pattern.search import taxonomy, search
 
+from tmi import WordNetClassifier
 
-# /////////////////////////////////////////////////////////////////////////////
-# Wordnet Classifier used for searching.
-# /////////////////////////////////////////////////////////////////////////////
-
-class WordNetClassifier(Classifier):
-    
-    def __init__(self, wordnet=None):
-        if wordnet is None:
-            try: 
-                from en import wordnet
-            except ImportError:
-                pass
-        Classifier.__init__(self, self._parents, self._children)
-        self.wordnet = wordnet
-
-    def _children(self, word, pos="NN"):
-        try: 
-            return [w.senses[0] for w in self.wordnet.synsets(word, pos)[0].hyponyms()]
-        except (KeyError, IndexError):
-            pass
-        
-    def _parents(self, word, pos="NN"):
-        try: 
-            return [w.senses[0] for w in self.wordnet.synsets(word, pos)[0].hypernyms()]
-        except (KeyError, IndexError):
-            pass
 
 taxonomy.classifiers.append(WordNetClassifier(wordnet))
 
