@@ -34,7 +34,8 @@ class WordNetClassifier(Classifier):
 taxonomy.classifiers.append(WordNetClassifier(wordnet))
 
 def find(pattern, motifs):
+    pattern = Pattern.from_string(pattern)
     for motif, description, parse in motifs:
-        if search(pattern, parse):
+        if pattern.search(parse):
             yield motif, description
         

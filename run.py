@@ -1,42 +1,82 @@
 # -*- coding: utf-8 -*-
 
 import os
-from flask import Flask, request, jsonify
-import cPickle as pickle
+from flask import Flask, request, jsonify, Response, stream_with_context, render_template
 
-from pattern.en import Sentence
-from tmi import find
+from jinja2 import Environment
+from jinja2.loaders import FileSystemLoader
+
+import cPickle as pickle
+import codecs
+
+import time
+
+from pattern.en import Sentence, wordnet
+from pattern.search import taxonomy, search, Classifier, Pattern
+import json
+
+
+# /////////////////////////////////////////////////////////////////////////////
+# Wordnet Classifier used for searching.
+# /////////////////////////////////////////////////////////////////////////////
+
+class WordNetClassifier(Classifier):
+    
+    def __init__(self, wordnet=None):
+        if wordnet is None:
+            try: 
+                from en import wordnet
+            except ImportError:
+                pass
+        Classifier.__init__(self, self._parents, self._children)
+        self.wordnet = wordnet
+
+    def _children(self, word, pos="NN"):
+        try: 
+            return [w.senses[0] for w in self.wordnet.synsets(word, pos)[0].hyponyms()]
+        except (KeyError, IndexError):
+            pass
+        
+    def _parents(self, word, pos="NN"):
+        try: 
+            return [w.senses[0] for w in self.wordnet.synsets(word, pos)[0].hypernyms()]
+        except (KeyError, IndexError):
+            pass
+
+taxonomy.classifiers.append(WordNetClassifier(wordnet))
 
 
 #flask application
 app = Flask(__name__)
 
-tmi = []
-for line in open('tmi.txt'):
-    line = line.strip().split('\t')
-    if len(line) == 3:
-        motif, description, parse = line[0], line[1], Sentence(line[2])
-        tmi.append((motif, description, parse))
-
 # views:
-@app.route('/api',methods=['GET', 'POST'])
+@app.route('/api', methods=['GET', 'POST'])
 def api():
 
     query = request.form['q'].strip()
-
+    words = [word for word in query.split() if word.islower()]
+    pattern = Pattern.fromstring(query)
+    print pattern
     results = ""
-    for match in find(query, tmi):
-        idee = match[0]
-        text = match[1]
-        results += "<div id='match'><span id='idee'>"+idee+"</span><span id='text'>"+text+"</span></div>"
-    return jsonify({"html":results})
+    def iterate_tmi():
+        for line in codecs.open('tmi.txt', encoding='utf-8'):
+            line = line.strip().split('\t')
+            if len(line) is not 3:
+                continue
+            motif, description, parse = line
+            if words and not any(word in parse for word in words):
+                continue
+            if pattern.search(Sentence(parse)):
+                yield "<div id='match'><span id='idee'>%s</b></span><span id='text'>%s</span></div>" % (
+                        motif, description)
+    return jsonify({'html': ''.join(iterate_tmi())})
 
 @app.route('/')
 def index():
-    return open(os.getcwd()+'/static/templates/index.html').read()
+    return render_template('index.html', title='TMI-search')
 
 if __name__ == '__main__':
-    app.run(debug=True,host='localhost',port=5555,use_reloader=False,threaded=False)
+    app.run(debug=True,host='localhost',port=5555,use_reloader=True,threaded=True)
 
 
 
