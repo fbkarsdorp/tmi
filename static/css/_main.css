@@ -5,3 +5,5 @@ body{background:#eee;}
 #results{margin:2em 0;min-height:50px;}#results.loading{background:#eeeeee url("images/ajax-loader.gif") no-repeat 10px 10px;}
 #results #match{margin:0.5em 0;border-bottom:1px solid #ccc;line-height:2em;padding:0.5em 1em;}#results #match #idee{font-weight:bold;}
 #results #match #text{margin-left:1em;}
+#counts #count {margin:0.5em 0;border-bottom:1px solid #ccc;line-height:2em;padding:0.5em 1em;}#counts #count #hits{font-weight:bold;}
+#counts #count #cats{margin-left:1em;}

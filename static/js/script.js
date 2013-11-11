@@ -13,6 +13,7 @@ $(document).ready(function(){
                                 success:function(data){
                                         console.log(data);
                                         $("#results").removeClass("loading");
+                                        $("#counts").html(data.categories);
                                         $("#results").html(data.html);
                                 },
                                 error:function(){

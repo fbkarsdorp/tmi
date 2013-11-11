@@ -9,7 +9,7 @@ from jinja2.loaders import FileSystemLoader
 import cPickle as pickle
 import codecs
 
-import time
+from collections import defaultdict
 
 from pattern.en import Sentence, wordnet
 from pattern.search import taxonomy, search, Classifier, Pattern
@@ -56,7 +56,6 @@ def api():
     query = request.form['q'].strip()
     words = [word for word in query.split() if word.islower()]
     pattern = Pattern.fromstring(query)
-    print pattern
     results = ""
     def iterate_tmi():
         for line in codecs.open('tmi.txt', encoding='utf-8'):
@@ -67,9 +66,18 @@ def api():
             if words and not any(word in parse for word in words):
                 continue
             if pattern.search(Sentence(parse)):
-                yield "<div id='match'><span id='idee'>%s</b></span><span id='text'>%s</span></div>" % (
+                yield (motif, description)
+    results = ""
+    categories = defaultdict(int)
+    count = 0
+    for motif, description in iterate_tmi():
+        results += "<div id='match'><span id='idee'>%s</b></span><span id='text'>%s</span></div>" % (
                         motif, description)
-    return jsonify({'html': ''.join(iterate_tmi())})
+        categories[motif[0]] += 1
+        count += 1
+    categories = "<div id='count'><span id=hits>Hits:%s</b></span><span id='cats'>%s</span></div>" % (
+        count, ' '.join('%s:%s' % (c, f) for c,f in categories.iteritems()))
+    return jsonify({'html': results, 'categories': categories})
 
 @app.route('/')
 def index():
