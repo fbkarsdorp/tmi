@@ -8,11 +8,12 @@ from jinja2.loaders import FileSystemLoader
 
 import cPickle as pickle
 import codecs
+import re
 
 from collections import defaultdict
 
 from pattern.en import Sentence, wordnet
-from pattern.search import taxonomy, search, Classifier, Pattern
+from pattern.search import taxonomy, match, Classifier, Pattern
 import json
 
 
@@ -23,11 +24,6 @@ import json
 class WordNetClassifier(Classifier):
     
     def __init__(self, wordnet=None):
-        if wordnet is None:
-            try: 
-                from en import wordnet
-            except ImportError:
-                pass
         Classifier.__init__(self, self._parents, self._children)
         self.wordnet = wordnet
 
@@ -49,12 +45,13 @@ taxonomy.classifiers.append(WordNetClassifier(wordnet))
 #flask application
 app = Flask(__name__)
 
+split = re.compile('\s|\|')
 # views:
 @app.route('/api', methods=['GET', 'POST'])
 def api():
 
     query = request.form['q'].strip()
-    words = [word for word in query.split() if word.islower()]
+    words = [word for word in split.split(query) if word.islower()]
     pattern = Pattern.fromstring(query)
     results = ""
     def iterate_tmi():
@@ -65,7 +62,7 @@ def api():
             motif, description, parse = line
             if words and not any(word in parse for word in words):
                 continue
-            if pattern.search(Sentence(parse)):
+            if match(query, Sentence(parse)):
                 yield (motif, description)
     results = ""
     categories = defaultdict(int)
