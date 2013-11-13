@@ -45,7 +45,7 @@ taxonomy.classifiers.append(WordNetClassifier(wordnet))
 #flask application
 app = Flask(__name__)
 
-split = re.compile('\s|\|')
+split = re.compile('\s|\||\*|\?')
 # views:
 @app.route('/api', methods=['GET', 'POST'])
 def api():
