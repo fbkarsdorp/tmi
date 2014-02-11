@@ -88,7 +88,7 @@ def compile_index(index):
     G = TMI() # initialize a Directed Graph
     for entry in index:
         motif = (number, description) = split_index_entry(entry)
-        G.add_node(number, data=description, parse=parsetree(description, lemmata=True), anchor=True)
+        G.add_node(number, data=description, anchor=True)
         if main_category_motif(motif):
             # we found a new anchor point
             header, headerchange = number, True
@@ -113,7 +113,7 @@ def compile_index(index):
             while history and integer(number) > integer(history[-1].split('.-')[1]):
                 history.pop()
             G.add_edge(history[-1], number)
-    G.add_node('ROOT', data='Unobserved ROOT node of the TMI', parse='')
+    G.add_node('ROOT', data='Unobserved ROOT node of the TMI')
     # connect all header categories to an fictious root node.
     for header in headers:
         G.add_edge('ROOT', header)
@@ -152,7 +152,7 @@ def add_motifs_to_index(motifs, index):
         # it could be we have already seen this motif in the index
         # if so, continue to the next
         if number in index: continue
-        index.add_node(number, data=description, parse=parsetree(description, lemmata=True))
+        index.add_node(number, data=description)
         if len(number.split('.')) is 1: # non-terminal node
             # try to match the motif to one of the motifs in the index
             if rounddown(number, 10) != number and rounddown(number, 10) in index:
@@ -204,6 +204,6 @@ if __name__ == '__main__':
         tmi = add_motifs_to_index(inf, index)
     normalize_step_weight(tmi)
     tmi.reverse(copy=False)
-    with open('tmi.cPickle', 'w') as out:
-        cPickle.dump(tmi, out)
+    # with open('tmi.cPickle', 'w') as out:
+    #     cPickle.dump(tmi, out)
 
