@@ -2,79 +2,50 @@
 
 import os
 from flask import Flask, request, jsonify, Response, stream_with_context, render_template
-
-from jinja2 import Environment
-from jinja2.loaders import FileSystemLoader
-
-import cPickle as pickle
+from pattern.en import wordnet as WN
+import whoosh
+from whoosh import index
+from whoosh import qparser
 import codecs
 import re
 
 from collections import defaultdict
 
-from pattern.en import Sentence, wordnet
-from pattern.search import taxonomy, match, Classifier, Pattern
 import json
-
-
-# /////////////////////////////////////////////////////////////////////////////
-# Wordnet Classifier used for searching.
-# /////////////////////////////////////////////////////////////////////////////
-
-class WordNetClassifier(Classifier):
-    
-    def __init__(self, wordnet=None):
-        Classifier.__init__(self, self._parents, self._children)
-        self.wordnet = wordnet
-
-    def _children(self, word, pos="NN"):
-        try: 
-            return [w.senses[0] for w in self.wordnet.synsets(word, pos)[0].hyponyms()]
-        except (KeyError, IndexError):
-            pass
-        
-    def _parents(self, word, pos="NN"):
-        try: 
-            return [w.senses[0] for w in self.wordnet.synsets(word, pos)[0].hypernyms()]
-        except (KeyError, IndexError):
-            pass
-
-taxonomy.classifiers.append(WordNetClassifier(wordnet))
 
 
 #flask application
 app = Flask(__name__)
 
-split = re.compile('\s|\||\*|\?')
 # views:
 @app.route('/api', methods=['GET', 'POST'])
 def api():
+    ix = whoosh.index.open_dir('index', indexname='tmi')
+    with ix.searcher() as searcher:
+        def _search(query):
+            for word in query.split():
+                if not word.startswith('wordnet') and not word.isupper():
+                    try:
+                        hypernyms = WN.synsets(word, 'NN')[0].hypernyms(recursive=True)
+                        query += ' wordnet:"%s"' % hypernyms[0][0]
+                    except IndexError:
+                        pass
+            query = qparser.QueryParser(
+                "description", ix.schema, group=qparser.OrGroup).parse(query)
+            print query
+            return searcher.search(query, limit=100)
 
-    query = request.form['q'].strip()
-    words = [word for word in split.split(query) if word.islower()]
-    pattern = Pattern.fromstring(query)
-    results = ""
-    def iterate_tmi():
-        for line in codecs.open('tmi.txt', encoding='utf-8'):
-            line = line.strip().split('\t')
-            if len(line) is not 3:
-                continue
-            motif, description, parse = line
-            if words and not any(word in parse for word in words):
-                continue
-            if match(query, Sentence(parse)):
-                yield (motif, description)
-    results = ""
-    categories = defaultdict(int)
-    count = 0
-    for motif, description in iterate_tmi():
-        results += "<div id='match'><span id='idee'>%s</b></span><span id='text'>%s</span></div>" % (
+        def htmlize(hits):
+            html = ''
+            for hit in hits:
+                motif = hit['motif']
+                description = hit['description']
+                html += "<div id='match'><span id='idee'>%s</b></span><span id='text'>%s</span></div>" % (
                         motif, description)
-        categories[motif[0]] += 1
-        count += 1
-    categories = "<div id='count'><span id=hits>Hits:%s</b></span><span id='cats'>%s</span></div>" % (
-        count, ' '.join('%s:%s' % (c, f) for c,f in categories.iteritems()))
-    return jsonify({'html': results, 'categories': categories})
+            return html
+
+        results = htmlize(_search(request.form['q'].strip()))
+        return jsonify({'html': results})
 
 @app.route('/')
 def index():
