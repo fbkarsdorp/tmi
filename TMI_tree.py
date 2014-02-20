@@ -204,6 +204,6 @@ if __name__ == '__main__':
         tmi = add_motifs_to_index(inf, index)
     normalize_step_weight(tmi)
     tmi.reverse(copy=False)
-    # with open('tmi.cPickle', 'w') as out:
-    #     cPickle.dump(tmi, out)
+    with open('tmi.cPickle', 'w') as out:
+        cPickle.dump(tmi, out)
 
