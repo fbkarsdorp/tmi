@@ -48,6 +48,9 @@ class TMI(nx.DiGraph):
         assert 'ROOT' in subsumers, (node, subsumers)
         return subsumers
 
+    def parent(self, node):
+        return self.parents(node)[0]
+
     def children(self, node):
         "Return the parents of a node."
         return set(self.predecessors(node))

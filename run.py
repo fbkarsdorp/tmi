@@ -10,38 +10,49 @@ import codecs
 import re
 
 from collections import defaultdict
-
+from expand import WordnetPlugin
 import json
-
 
 #flask application
 app = Flask(__name__)
+
+formatter = ["<div id='match'> <span id='idee'>%s</span> </br><span id='text'>%s</span>",
+             "</br><p id='add'>%s</p>", "<p id='ref'>%s</p>", "</div>"]
 
 # views:
 @app.route('/api', methods=['GET', 'POST'])
 def api():
     ix = whoosh.index.open_dir('index', indexname='tmi')
     with ix.searcher() as searcher:
+
+        def hypernym(word, limit=3):
+            try:
+                hypernyms = WN.synsets(word, 'NN')[0].hypernyms(recursive=True)
+                return ('wn:%s ' % word) + (' wn:'.join({w.senses[0] for w in hypernyms[:limit]}))
+            except IndexError:
+                pass
+
         def _search(query):
-            for word in query.split():
-                if not word.startswith('wordnet') and not word.isupper():
-                    try:
-                        hypernyms = WN.synsets(word, 'NN')[0].hypernyms(recursive=True)
-                        query += ' wordnet:"%s"' % hypernyms[0][0]
-                    except IndexError:
-                        pass
-            query = qparser.QueryParser(
-                "description", ix.schema, group=qparser.OrGroup).parse(query)
-            print query
-            return searcher.search(query, limit=100)
+            parser = qparser.QueryParser(None, ix.schema)
+            parser.add_plugin(WordnetPlugin(["description", "additional"], group=qparser.OrGroup.factory(0.9)))
+            parsed_query = parser.parse(query, debug=True)
+            print parsed_query
+            return searcher.search(parsed_query, limit=100)
 
         def htmlize(hits):
             html = ''
             for hit in hits:
-                motif = hit['motif']
-                description = hit['description']
-                html += "<div id='match'><span id='idee'>%s</b></span><span id='text'>%s</span></div>" % (
-                        motif, description)
+                motif = hit['motif'].strip()
+                description = hit['description'].strip()
+                additional = hit['additional'].strip()
+                references = hit['references'].strip()
+                format = formatter[0] % (motif, description)
+                if additional:
+                    format += formatter[1] % additional
+                if references:
+                    format += formatter[2] % references
+                format += formatter[-1]
+                html += format
             return html
 
         results = htmlize(_search(request.form['q'].strip()))
