@@ -6,11 +6,12 @@ from pattern.en import wordnet as WN
 import whoosh
 from whoosh import index
 from whoosh import qparser
+from whoosh.qparser.plugins import RegexPlugin
 import codecs
 import re
 
 from collections import defaultdict
-from expand import WordnetPlugin
+from expand import WordnetPlugin, MultiFieldWordNetParser
 import json
 
 #flask application
@@ -25,17 +26,11 @@ def api():
     ix = whoosh.index.open_dir('index', indexname='tmi')
     with ix.searcher() as searcher:
 
-        def hypernym(word, limit=3):
-            try:
-                hypernyms = WN.synsets(word, 'NN')[0].hypernyms(recursive=True)
-                return ('wn:%s ' % word) + (' wn:'.join({w.senses[0] for w in hypernyms[:limit]}))
-            except IndexError:
-                pass
-
         def _search(query):
-            parser = qparser.QueryParser(None, ix.schema)
-            parser.add_plugin(WordnetPlugin(["description", "additional"], group=qparser.OrGroup.factory(0.9)))
-            parsed_query = parser.parse(query, debug=True)
+            parser = MultiFieldWordNetParser(["description", "additional"], ix.schema,
+                fieldboosts={'description': 2.0, 'additional': 1.5}, 
+                group=qparser.OrGroup.factory(0.9))
+            parsed_query = parser.parse(query)
             print parsed_query
             return searcher.search(parsed_query, limit=100)
 

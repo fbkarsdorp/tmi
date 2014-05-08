@@ -57,7 +57,7 @@ header {
 
 header h1 {
   letter-spacing: -1px;
-  font-size: 72px;
+  font-size: 52px;
   color: #fff;
   line-height: 1;
   margin-bottom: 0.2em;
@@ -84,15 +84,27 @@ header h1 {
 	width:100%;
 }
 
+form{
+	width:500px;
+	margin:0 auto;
+}
+
 #search input{
-	padding:0.5em 1em;
+	border-radius:15px; 
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+	/*padding:0.5em 1em;*/
+	padding: 6px 20px 6px 45px;
+	margin:3px;
 	border:1px solid #ccc;
 	outline-style:none;
 	width:500px;
 	line-height:2em;
 	font-family:Menlo, courier;
 	font-size:15px;
+	background: url(images/search.png) no-repeat 8px 4px;
 }
+
 
 p { margin-top: 0.1em; margin-bottom: 0.1em}
 

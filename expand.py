@@ -1,16 +1,21 @@
 
 import copy
 from whoosh.qparser.plugins import Plugin
+from whoosh.qparser import QueryParser
 from whoosh.qparser import syntax
 from pattern.en import wordnet as WN
 
 def expand(term, limit=3):
-    hypernyms = WN.synsets(term, 'NN')[0].hypernyms(recursive=True)
-    return {w.senses[0] for w in hypernyms[:limit]}
+    # EXPANSION IS ONLY DONE FOR FIRST SYNSET. WHY?
+    try:
+        hypernyms = WN.synsets(term, 'NN')[0].hypernyms(recursive=True)
+        return {w.senses[0] for w in hypernyms[:limit]}.union({term})
+    except IndexError:
+        return {}
 
 class WordnetPlugin(Plugin):
 
-    def __init__(self, fieldnames, fieldboosts=None, expansion=3, group=syntax.OrGroup):
+    def __init__(self, fieldnames, fieldboosts=None, expansion=1, group=syntax.OrGroup.factory(0.9)):
 
         self.fieldnames = fieldnames
         self.boosts = fieldboosts or {}
@@ -39,7 +44,14 @@ class WordnetPlugin(Plugin):
                 for hypernym in expand(node.text, self.expansion):
                     newnode = copy.copy(node)
                     newnode.set_fieldname("wn")
+                    newnode.text = hypernym
+                    newnode.set_boost(self.boosts.get("wn", 1.0))
                     newnodes.append(newnode)                    
                 group[i] = self.group(newnodes)
         return group
 
+def MultiFieldWordNetParser(fieldnames, schema, fieldboosts=None, expansion=1, **kwargs):
+    p = QueryParser(None, schema, **kwargs)
+    mfp = WordnetPlugin(fieldnames, fieldboosts=fieldboosts, expansion=expansion)
+    p.add_plugin(mfp)
+    return p
