@@ -15,7 +15,7 @@ def expand(term, limit=3):
 
 class WordnetPlugin(Plugin):
 
-    def __init__(self, fieldnames, fieldboosts=None, expansion=1, group=syntax.OrGroup.factory(0.9)):
+    def __init__(self, fieldnames, fieldboosts=None, expansion=3, group=syntax.OrGroup.factory(0.9)):
 
         self.fieldnames = fieldnames
         self.boosts = fieldboosts or {}
@@ -37,6 +37,7 @@ class WordnetPlugin(Plugin):
                 # versions of the node for each configured "multi" field.
                 newnodes = []
                 for fname in self.fieldnames:
+                    print fname
                     newnode = copy.copy(node)
                     newnode.set_fieldname(fname)
                     newnode.set_boost(self.boosts.get(fname, 1.0))
@@ -48,6 +49,9 @@ class WordnetPlugin(Plugin):
                     newnode.set_boost(self.boosts.get("wn", 1.0))
                     newnodes.append(newnode)                    
                 group[i] = self.group(newnodes)
+            elif node.has_fieldname and node.fieldname == 'wn':
+                node.set_boost(self.boosts["description"])
+                group[i] = node
         return group
 
 def MultiFieldWordNetParser(fieldnames, schema, fieldboosts=None, expansion=1, **kwargs):

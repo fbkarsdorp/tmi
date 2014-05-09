@@ -35,7 +35,7 @@ if __name__ == '__main__':
                 try:
                     hypernyms = WN.synsets(lemma, 'NN')[0].hypernyms(recursive=True)
                     keywords.update({w.senses[0] for w in hypernyms})
-                except IndexError:
+                except (IndexError, ValueError):
                     pass
             writer.add_document(motif = u(item['motif']), 
                                 description = u(item['description']),

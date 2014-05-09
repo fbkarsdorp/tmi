@@ -28,7 +28,7 @@ def api():
 
         def _search(query):
             parser = MultiFieldWordNetParser(["description", "additional"], ix.schema,
-                fieldboosts={'description': 2.0, 'additional': 1.5}, 
+                fieldboosts={'description': 3.0, 'additional': 1.0}, 
                 group=qparser.OrGroup.factory(0.9))
             parsed_query = parser.parse(query)
             print parsed_query
