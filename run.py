@@ -1,21 +1,26 @@
 # -*- coding: utf-8 -*-
 
 import os
+import logging
+import codecs
+import json
+import re
+from collections import defaultdict
+
 from flask import Flask, request, jsonify, Response, stream_with_context, render_template
 from pattern.en import wordnet as WN
+
 import whoosh
 from whoosh import index
 from whoosh import qparser
 from whoosh.qparser.plugins import RegexPlugin
-import codecs
-import re
 
-from collections import defaultdict
 from expand import WordnetPlugin, MultiFieldWordNetParser
-import json
 
 #flask application
 app = Flask(__name__)
+
+logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 formatter = ["<div id='match'> <span id='idee'>%s</span> </br><span id='text'>%s</span>",
              "</br><p id='add'>%s</p>", "<p id='ref'>%s</p>", "</div>"]
@@ -31,12 +36,12 @@ def api():
                 fieldboosts={'description': 3.0, 'additional': 1.0}, 
                 group=qparser.OrGroup.factory(0.9))
             parsed_query = parser.parse(query)
-            print parsed_query
-            return searcher.search(parsed_query, limit=100)
+            return searcher.search(parsed_query, limit=100, terms=True)
 
         def htmlize(hits):
             html = ''
             for hit in hits:
+                print hit.matched_terms()
                 motif = hit['motif'].strip()
                 description = hit['description'].strip()
                 additional = hit['additional'].strip()
@@ -50,8 +55,17 @@ def api():
                 html += format
             return html
 
-        results = htmlize(_search(request.form['q'].strip()))
-        return jsonify({'html': results})
+        logging.info("QUERY: " + request.form['q'].strip())
+        results = _search(request.form['q'].strip())
+        found = results.scored_length()
+        if results.has_exact_length():
+            print("Scored", found, "of exactly", len(results), "documents")
+        else:
+            low = results.estimated_min_length()
+            high = results.estimated_length()
+            print("Scored", found, "of between", low, "and", high, "documents")
+        html_results = htmlize(results)
+        return jsonify({'html': html_results})
 
 @app.route('/')
 def index():
