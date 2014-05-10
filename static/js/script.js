@@ -7,7 +7,7 @@ $(document).ready(function(){
                         query = $(this).val();
                         console.log(query);
                         $.ajax({
-                                url:"/api",
+                                url:"/tmi/api",
                                 data:{"q":query},
                                 method:"POST",
                                 success:function(data){
