@@ -7,14 +7,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!-- css rendered with less -->
-		<link href="/tmi/static/css/_main.css" rel="stylesheet" type="text/css" />
+		<!-- <link href="/tmi/static/css/_main.css" rel="stylesheet" type="text/css" /> -->
+		<link href="/static/css/_main.css" rel="stylesheet" type="text/css" />
 		<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'/>
 
 		<!-- external jquery -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 		<!-- js -->
-		<script src="/tmi/static/js/script.js"></script>
+		<!-- <script src="/tmi/static/js/script.js"></script> -->
+    	<script src="/static/js/script.js"></script>
 	
 		<title>{{title}}</title>
 	</head>
@@ -25,14 +27,16 @@
 		        <a href="https://github.com/fbkarsdorp/tmi" class="button"><small>View project on</small>GitHub</a>
 	       </div>
 	    </header>
+
 	    <div id="container">
 			<div id="search">
 				<input type='text' placeholder="enter your query"/>
 			</div>
-			<div id="counts">
-			</div>
- 			<div id="results">
- 			</div>
-	</div>
+			<div id="suggestion"></div>
+			<div id="execution">
+				<p><span id="hits"></span> <span id="time"></span></p>
+			<div id="opdracht"></div>
+ 			<div id="results"></div>
+	    </div>
 	</body>
 </html>

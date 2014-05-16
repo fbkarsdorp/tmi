@@ -7,13 +7,17 @@ $(document).ready(function(){
                         query = $(this).val();
                         console.log(query);
                         $.ajax({
-                                url:"/tmi/api",
+                                url:"api",
                                 data:{"q":query},
                                 method:"POST",
+                                dataType: "json",
                                 success:function(data){
-                                        console.log(data);
                                         $("#results").removeClass("loading");
                                         $("#counts").html(data.categories);
+                                        $("#suggestion").html(data.suggest);
+                                        $("#opdracht").html(data.opdracht);
+                                        $("#hits").html(data.hits);
+                                        $("#time").html(data.time);
                                         $("#results").html(data.html);
                                 },
                                 error:function(){

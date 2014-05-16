@@ -6,6 +6,7 @@ import codecs
 import json
 import re
 from collections import defaultdict
+from functools import partial
 
 from flask import Flask, request, jsonify, Response, stream_with_context, render_template
 from pattern.en import wordnet as WN
@@ -13,6 +14,7 @@ from pattern.en import wordnet as WN
 import whoosh
 from whoosh import index
 from whoosh import qparser
+from whoosh.highlight import WholeFragmenter
 from whoosh.qparser.plugins import RegexPlugin
 
 from expand import WordnetPlugin, MultiFieldWordNetParser
@@ -30,7 +32,6 @@ formatter = ["<div id='match'> <span id='idee'>%s</span> </br><span id='text'>%s
 def api():
     ix = whoosh.index.open_dir('index', indexname='tmi')
     with ix.searcher() as searcher:
-
         def _search(query):
             parser = MultiFieldWordNetParser(["description", "additional"], ix.schema,
                 fieldboosts={'description': 3.0, 'additional': 1.0}, 
@@ -40,15 +41,14 @@ def api():
 
         def htmlize(hits):
             html = ''
+            hits.fragmenter = WholeFragmenter()
             for hit in hits:
-                print hit.matched_terms()
                 motif = hit['motif'].strip()
-                description = hit['description'].strip()
                 additional = hit['additional'].strip()
                 references = hit['references'].strip()
-                format = formatter[0] % (motif, description)
+                format = formatter[0] % (motif, hit.highlights('description', minscore=0))
                 if additional:
-                    format += formatter[1] % additional
+                    format += formatter[1] % hit.highlights('additional', minscore=0)
                 if references:
                     format += formatter[2] % references
                 format += formatter[-1]
@@ -57,15 +57,17 @@ def api():
 
         logging.info("QUERY: " + request.form['q'].strip())
         results = _search(request.form['q'].strip())
-        found = results.scored_length()
-        if results.has_exact_length():
-            print("Scored", found, "of exactly", len(results), "documents")
-        else:
-            low = results.estimated_min_length()
-            high = results.estimated_length()
-            print("Scored", found, "of between", low, "and", high, "documents")
+        found = len(results)
         html_results = htmlize(results)
-        return jsonify({'html': html_results})
+        suggestion = results.key_terms('wn', numterms=3)
+        if suggestion:
+            suggestion = "More abstraction? Try one of these: " + ', '.join('wn:%s' % w for w, _ in suggestion)
+        else:
+            suggestion = ''
+        return jsonify({'html': html_results, 
+                        'hits': "%s results" % found, 
+                        'time': "(%.3f seconds)" % results.runtime, 
+                        'suggest': suggestion})
 
 @app.route('/')
 def index():

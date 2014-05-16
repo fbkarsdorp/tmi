@@ -18,7 +18,8 @@ SCHEMA = Schema(motif = ID(stored=True, unique=True),
                                   field_boost=1.5, stored=True, phrase=True),
                 wn = KEYWORD(field_boost=1.0, stored=True, lowercase=True, scorable=True, commas=True),
                 references = TEXT(analyzer=SimpleAnalyzer(), field_boost=0.5,
-                                  stored=True, phrase=True))
+                                  stored=True, phrase=True),
+                location = KEYWORD(field_boost=0.5, stored=True, lowercase=True, scorable=True, commas=True))
 
 
 if __name__ == '__main__':
@@ -32,15 +33,20 @@ if __name__ == '__main__':
         for item in ijson.items(infile, "item"):
             keywords = set()
             for lemma in item['lemmas']:
+                if not lemma: continue
+                syn_id = 0 if lemma != 'white' else 1
                 try:
-                    hypernyms = WN.synsets(lemma, 'NN')[0].hypernyms(recursive=True)
-                    keywords.update({w.senses[0] for w in hypernyms})
+                    hypernyms = WN.synsets(lemma, 'NN')[syn_id].hypernyms(recursive=True)
+                    hypernyms = [set(w.senses) for w in hypernyms]
+                    if hypernyms:
+                        keywords.update(reduce(set.union, hypernyms))
                 except (IndexError, ValueError):
                     pass
             writer.add_document(motif = u(item['motif']), 
                                 description = u(item['description']),
                                 additional = u(item['additional_description']), 
                                 wn = u(', '.join(keywords)),
-                                references=u(item['references']))
+                                references=u(item['references']),
+                                location=u(', '.join(item['locations'])))
         writer.commit()
 
