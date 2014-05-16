@@ -39,6 +39,18 @@ def api():
             parsed_query = parser.parse(query)
             return searcher.search(parsed_query, limit=100, terms=True)
 
+        # [{results: [{motif: djkdjd, description: djdjhdk, additional: djdkjd, references: dsdjk}],
+        #  {suggestions}
+
+        def to_json(hits):
+            hits.fragmenter = WholeFragmenter()
+            for hit in hits:
+                result = {'motif': hit['motif'],
+                          'description': hit.highlights('description', minscore=0),
+                          'additional': hit.highlights('additional', minscore=0),
+                          'references': hit['references'].strip()}
+                yield result
+
         def htmlize(hits):
             html = ''
             hits.fragmenter = WholeFragmenter()
@@ -58,15 +70,17 @@ def api():
         logging.info("QUERY: " + request.form['q'].strip())
         results = _search(request.form['q'].strip())
         found = len(results)
-        html_results = htmlize(results)
+        # html_results = htmlize(results)
+        json_results = jsonify(to_json(results))
         suggestion = results.key_terms('wn', numterms=3)
         if suggestion:
-            suggestion = "More abstraction? Try one of these: " + ', '.join('wn:%s' % w for w, _ in suggestion)
+            suggestion = [w for w, _ in suggestion]
+            # suggestion = "More abstraction? Try one of these: " + ', '.join('wn:%s' % w for w, _ in suggestion)
         else:
-            suggestion = ''
-        return jsonify({'html': html_results, 
-                        'hits': "%s results" % found, 
-                        'time': "(%.3f seconds)" % results.runtime, 
+            suggestion = []
+        return jsonify({'results': json_results, 
+                        'hits': found, 
+                        'time': results.runtime, 
                         'suggest': suggestion})
 
 @app.route('/')
