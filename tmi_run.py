@@ -24,55 +24,34 @@ app = Flask(__name__)
 
 logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
-formatter = ["<div id='match'> <span id='idee'>%s</span> </br><span id='text'>%s</span>",
-             "</br><p id='add'>%s</p>", "<p id='ref'>%s</p>", "</div>"]
-
 # views:
 @app.route('/api', methods=['GET', 'POST'])
 def api():
     ix = whoosh.index.open_dir('index', indexname='tmi')
     with ix.searcher() as searcher:
-        def _search(query):
+        def _search(query,page):
             parser = MultiFieldWordNetParser(["description", "additional"], ix.schema,
                 fieldboosts={'description': 3.0, 'additional': 1.0}, 
                 group=qparser.OrGroup.factory(0.9))
             parsed_query = parser.parse(query)
-            return searcher.search(parsed_query, limit=100, terms=True)
-
-        # [{results: [{motif: djkdjd, description: djdjhdk, additional: djdkjd, references: dsdjk}],
-        #  {suggestions}
+            return searcher.search_page(parsed_query, page, pagelen=20, terms=True)
 
         def to_json(hits):
-            hits.fragmenter = WholeFragmenter()
+            hits.results.fragmenter = WholeFragmenter()
             for hit in hits:
                 result = {'motif': hit['motif'],
                           'description': hit.highlights('description', minscore=0),
                           'additional': hit.highlights('additional', minscore=0),
                           'references': hit['references'].strip()}
                 yield result
-
-        def htmlize(hits):
-            html = ''
-            hits.fragmenter = WholeFragmenter()
-            for hit in hits:
-                motif = hit['motif'].strip()
-                additional = hit['additional'].strip()
-                references = hit['references'].strip()
-                format = formatter[0] % (motif, hit.highlights('description', minscore=0))
-                if additional:
-                    format += formatter[1] % hit.highlights('additional', minscore=0)
-                if references:
-                    format += formatter[2] % references
-                format += formatter[-1]
-                html += format
-            return html
-
-        logging.info("QUERY: " + request.form['q'].strip())
-        results = _search(request.form['q'].strip())
+        q = json.loads(request.data)['q']
+        page = json.loads(request.data).get('page') or 1
+        logging.info("QUERY: " + q.strip())
+        results = _search(q.strip(),page)
         found = len(results)
         # html_results = htmlize(results)
-        json_results = jsonify(to_json(results))
-        suggestion = results.key_terms('wn', numterms=3)
+        json_results = list(to_json(results))
+        suggestion = results.results.key_terms('wn', numterms=3)
         if suggestion:
             suggestion = [w for w, _ in suggestion]
             # suggestion = "More abstraction? Try one of these: " + ', '.join('wn:%s' % w for w, _ in suggestion)
@@ -80,11 +59,12 @@ def api():
             suggestion = []
         return jsonify({'results': json_results, 
                         'hits': found, 
-                        'time': results.runtime, 
+                        'pagecount': results.pagecount,
+                        'time': results.results.runtime, 
                         'suggest': suggestion})
-
-@app.route('/')
-def index():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def index(path):
     return render_template('index.html', title='TMI-search')
 
 if __name__ == '__main__':

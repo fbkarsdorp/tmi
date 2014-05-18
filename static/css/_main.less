@@ -1,55 +1,349 @@
-html,body {
-	font-family:"georgia";
-	font-size:15px;
-	line-height:1.5em;
+// out: _main.css, compress:true
+
+@import 'elements.less';
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic);
+
+@bg : #E7E7E6;
+@bg : #e2e6e9;
+@linkcolor : #999;
+@c3 : #83bace;
+//@c3 : #fc4321;
+//@c3 : #fecec5;
+
+html, body, div, span, aside,
+a, h1, h2, h3, h4, h5, h6, p, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 10px;
+	font: inherit;
+	vertical-align: baseline;
+}
+html,body,input {
+	font-family:'roboto','helvetica','sans';
+	font-size:62.5%;
+	color:#444;
 }
 
-body {
-	background:#eee;
+body, html {
+	background:@bg;
 }
 
-#container {
-	position:relative;
-	display:block;
-	margin: 4em auto;
-	width:100%;
-	max-width: 1000px;
+#name {
+	font-size:5rem;
+	line-height:1.3em;
+	color:#444;
+	font-weight:900;
+	.transition(0.1s);
+	&.small {
+		font-size:3rem;
+		line-height:3em;
+	}
+}
+
+#subname {
+	line-height:1em;
+	margin:2em;
+}
+
+.placeholder(#ccc);
+
+#spinner {
+	height:100px;
+	background:url(images/ajax-loader2.gif) no-repeat center;
 }
 
 #search {
-	position:relative;
-	display:block;
-	width:100%;
-	input {
-		padding:0.5em 1em;
-		border:1px solid #ccc;
-		outline-style:none;
-		width:500px;
-		line-height:2em;
-		font-family:Menlo, courier;
-		font-size:15px;
-		&:focus {
-			border:1px solid #999;
+	a {
+		color:@linkcolor;
+		text-decoration: none;
+		border:0;
+		margin:0.3em;
+		line-height:3em;
+		font-weight:100;
+		font-size:1.2rem;
+		padding:0.2em .5em 0.3em 0.5em;
+		.rounded(3px);
+		&:hover {
+			border-bottom:0px solid @linkcolor;
+			background: #ccc;
+			color:#444;
 		}
 	}
 }
 
-#results {
-	margin:2em 0;
-	min-height:50px;
-	&.loading {
-		background:#eee url("images/ajax-loader.gif") no-repeat 10px 10px;
+.row {
+	.flex-display();
+	.flex-direction(row);
+	.flex(3);
+}
+
+#prefix {
+	width:100%;
+	height:250px;
+	.transition(.3s);
+	&.prefix {
+		display:block;
+		height:120px;
 	}
-	#match {
-		margin:0.5em 0;
-		border-bottom:1px solid #ccc;
+}
+
+#searchpage {
+	width:100%;
+	padding:0;
+	.transition(0.1s);
+	.padding();
+	&.open {
+		width:50%;
+	}
+	#search {
+		max-width:800px;
+		margin: 5% auto;
+		width:100%;
+		position:relative;
+		font-size:1.5rem;
+		padding:0;
+		position:relative;
+		display:block;
+		text-align:center;
 		line-height:2em;
-		padding:0.5em 1em;
-		#idee {
-			font-weight:bold;
+		font-size:1.5rem;
+		.padding();
+		.row {
+			width:100%;
+			.padding();
+			.justify-content(justify);
+			div {
+				position:relative;
+				padding:0;
+				width:auto;
+				.padding();
+			}
+			div:nth-child(1){width:100%;}
+			div:nth-child(2){width:120px;}
+			div:nth-child(3){width:120px;}
+			input {
+				border:0;
+				background:#fff;
+				display:block;
+				font-size:2rem;
+				padding:0.8rem 2rem;
+				outline-style:none;
+				width:100%;
+				margin:0;
+				.padding();
+				.rounded(5px 0 0 5px);
+			}
+			button {
+				line-height:3.7rem;
+				border:0;
+				width:100%;
+				background:transparent;
+				height:100%;
+				display:block;
+				background:#ddd;
+				font-size:1.2em;
+				cursor:pointer;
+				color:#fff;
+				.rounded(0 5px 5px 0);
+				.padding();
+				//.transition(0.1s);
+				outline-style:none;
+				&:hover {
+					background:@c3;
+					color:#fff;
+				}
+			}
 		}
-		#text {
-			margin-left:1em;
+	}
+	#head {
+		background:@bg;
+		position:absolute;
+		width:100%;
+		top:0;
+		#meta {
+			margin:2em;
+			div div {
+				display:inline-block;
+			}
+			#stats {
+				#time, #hits,#pagecount {
+					font-weight:900;
+				}
+			}
+			#abstraction {
+				#sug {
+					background:@c3;
+					color:#fff;
+					padding:0.2em 1em;
+					.rounded(3px);
+					margin:0 .2em;
+					cursor:pointer;
+					&:hover {
+						background:#444;
+					}
+				}
+				label {
+					display:block;
+				}
+			}
+			label {
+				font-weight:100;
+			}
 		}
+		&.fixed {
+			position:fixed;
+			max-width:800px;
+			margin-top:0;
+			padding:2rem 0;
+			top:0;
+			z-index:999;
+			#name {
+				display:none;
+			}
+			#meta {
+				margin:0.2em;
+				#stats {
+					text-align:left;
+					padding:0 1em;
+					color:#999;
+					float:left;
+				}
+				#abstraction {
+					float:right;
+					margin:0;
+					label {
+						display:none;
+					}
+					#sug {
+						background:transparent;
+						color:#999;
+						padding:0;
+						margin:0 0.2em;
+						.rounded(0);
+						&:hover {
+							border-bottom:2px solid #999;
+						}
+					}
+				}
+			}
+		}
+	}
+	#results {
+		margin-top:2em;
+		#result {
+			//border-bottom:1px solid rgba(0,0,0,0.05);
+			text-align:left;
+			padding:2em 3em;
+			background:rgba(255,255,255,0.5);
+			.rounded(3px);
+			margin:0 0 0.2em 0;
+			.padding();
+			position:relative;
+			.transition(0.1s);
+			&:hover {
+				background:rgba(255,255,255,0.8);
+			}
+			div {
+				display:block;
+			}
+			#motif {
+				position:absolute;
+				top:0;
+				right:0;
+				background:#eee;
+				color:#fff;
+				font-weight:500;
+				font-size:0.8em;
+				margin:0.5em;
+				padding:0 1em;
+				.rounded(3px);
+			}
+			#description {
+				font-size:1.5em;
+				line-height:1.5em;
+				margin-bottom:.5em;
+			}
+			#additional {
+				line-height:1.3em;
+				margin-bottom:1em;
+				display:;
+			}
+			#references {
+				font-size:1em;
+				color:#999;
+				line-height:1.3em;
+				font-weight:100;
+				display:;
+			}
+			&:hover {
+				#motif {
+					background:#ccc;
+				}
+			}
+		}
+	}
+	#paging {
+		padding-top:2em;
+		#count > div {
+			display:inline-block;
+		}
+		#pages > div {
+			display:inline-block;
+			background:#ccc;
+			color:#fff;
+			padding:0em .8em;
+			margin:0.2em;
+			cursor:pointer;
+			.rounded(3px);
+			&.now, &:hover {
+				background:@c3;
+			}
+		}
+	}
+}
+
+#footer {
+	margin-top:2em;
+}
+
+#help {
+	width:1px;
+	padding:0;
+	border-left:1px dotted rgba(0,0,0,0.1);
+	.rounded(5px);
+	overflow:auto;
+	font-size:1.5rem;
+	position:absolute;
+	top:0;
+	right:0;
+	margin:0;
+	opacity:0.8;
+	height:100%;
+	.transition(0.1s);
+	.padding();
+	#content {
+		margin:2em 5em;
+		opacity:0;
+		.transition(0.1s);
+	}
+	&.open {
+		width:50%;
+		height:auto;
+		#content {
+			opacity:1;
+		}
+	}
+	h1,h2,h3,h4,h5,h6 {
+		line-height:2em;
+		font-weight:100;
+	}
+	h1 {font-size:2em;text-align:center;line-height:4em;}
+	h2 {font-size:1.6em;}
+	h3 {font-size:1.3em;}
+	h4 {font-size:1.1em;}
+	p {
+		margin:1em 0;
+		font-weight:100;
 	}
 }

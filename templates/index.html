@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app='app'>
 	<head>
 	
 		<meta charset="utf-8">
@@ -7,36 +7,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!-- css rendered with less -->
-		<!-- <link href="/tmi/static/css/_main.css" rel="stylesheet" type="text/css" /> -->
-		<link href="/static/css/_main.css" rel="stylesheet" type="text/css" />
+		<link href="static/css/_main.css" rel="stylesheet" type="text/css" />
 		<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'/>
 
-		<!-- external jquery -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- HTML5 base -->
+		<base href="/">
 
-		<!-- js -->
-		<!-- <script src="/tmi/static/js/script.js"></script> -->
-    	<script src="/static/js/script.js"></script>
+		<!--[if lt IE 9]>
+		    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+		<![endif]-->
 	
 		<title>{{title}}</title>
 	</head>
 	<body>	
-		<header>
-      		<div class="inner">
-		        <h1>Thompson's Motif-Index of Folk Literature</h1>
-		        <a href="https://github.com/fbkarsdorp/tmi" class="button"><small>View project on</small>GitHub</a>
-	       </div>
-	    </header>
 
-	    <div id="container">
-			<div id="search">
-				<input type='text' placeholder="enter your query"/>
-			</div>
-			<div id="suggestion"></div>
-			<div id="execution">
-				<p><span id="hits"></span> <span id="time"></span></p>
-			<div id="opdracht"></div>
- 			<div id="results"></div>
-	    </div>
+
+		<!-- angular view -->
+	    <div ng-view></div>
+
+		<!-- dependencies -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+		
+		<!-- custom script -->
+		<script src="static/js/script.js"></script>
+
 	</body>
 </html>

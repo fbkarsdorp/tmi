@@ -67,8 +67,10 @@ def api():
         html_results = htmlize(results)
         return jsonify({'html': html_results})
 
-@app.route('/')
-def index():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def index(path):
+    print path
     return render_template('index.html', title='TMI-search')
 
 if __name__ == '__main__':

@@ -1,31 +1,140 @@
-$(document).ready(function(){
+var app = angular.module('app',['ngRoute']);
 
-        $("#search input").on("keydown",function(e){
-                if(e.keyCode == "13"){
-                        $("#results").html("");
-                        $("#results").addClass("loading");
-                        query = $(this).val();
-                        console.log(query);
-                        $.ajax({
-                                url:"api",
-                                data:{"q":query},
-                                method:"POST",
-                                dataType: "json",
-                                success:function(data){
-                                        $("#results").removeClass("loading");
-                                        $("#counts").html(data.categories);
-                                        $("#suggestion").html(data.suggest);
-                                        $("#opdracht").html(data.opdracht);
-                                        $("#hits").html(data.hits);
-                                        $("#time").html(data.time);
-                                        $("#results").html(data.html);
-                                },
-                                error:function(){
-                                        $("#results").removeClass("loading");
-                                        $("#results").html("oops, something went wrong...");
-                                }
-                        })
+app.config(function($routeProvider, $locationProvider) {
+	$routeProvider
+	.when('/', {templateUrl: "static/templates/search.html",controller:'search'})
+	.otherwise( { redirectTo: '/'});
+	
+	$locationProvider.html5Mode(true);
+
+})
+
+app.run(function($interval,$rootScope,$location,$http){
+
+
+})
+
+/* Controllers ------------------------------------------------ */
+
+app.controller("search",function($scope,$http,$timeout){
+
+    $scope.page = 1;
+    $scope.pagecount = 99;
+
+    $scope.search = function(q,page){
+        $scope.q = q;
+        $scope.page = page ? page : 1;
+        if(page<1){page = 1;}
+        if($scope.data){
+            if(page>$scope.data.pagecount){page = $scope.data.pagecount;}
+        }
+        if(q==""){
+            $scope.data = "";
+            $scope.$apply();
+        } else {
+            $scope.loading = true;
+            $scope.data = "loading";
+            $http.post("api",{q:$scope.q,page:$scope.page}).success(function(data){
+                $scope.data = data;
+                $scope.pagecount = data.pagecount;
+                $scope.loading = false;
+            }).error(function(){
+                $scope.loading = false;
+            })
+        }
+    } 
+    $scope.sugsearch = function(q){
+        if(q.match(" ")){q = "wn:\""+q+"\""} else {q = "wn:"+q;};
+        $scope.search(q);
+    } 
+    $scope.pages = function(){
+        var pages = [];
+        var p = $scope.page-4;
+        if(p<1){p = 1;}
+        var pagecount = $scope.pagecount ? $scope.pagecount : 999;
+        for(var i = p; i < (p+10) && i <= pagecount; i++){
+            pages.push(i);
+        }
+        return pages;
+    } 
+    $("*[zoek]").focus();
+    $(window).on("keydown",function(e){
+        if(e.keyCode==27){
+            if($scope.q=="wn:fantasm"){
+                $scope.search("");
+            } else {
+                $scope.search("wn:fantasm");
+            }
+        }
+    })
+})
+
+/* Directives ------------------------------------------------- */
+
+app.directive("zoek",function($http){
+	return {
+		restrict:"A",
+		link:function(scope,element,attrs){
+			element.on("keydown",function(e){
+				if(e.keyCode=="13"){
+					scope.search(element.val());
+				}
+			})
+		}
+	}
+})
+
+app.directive("fixed",function($http,$rootScope){
+    return {
+        restrict:"A",
+        link:function(scope,element,attrs){
+            var pos = 0;
+            $(window).scroll(function () {
+                var pos = $(window).scrollTop();
+                if(pos>attrs['fixed']){
+                    element.addClass("fixed");
+                } else {
+                    element.removeClass("fixed");
                 }
-        })
+            });
+        }
+    }
+})
 
+app.directive("prefix",function($http,$rootScope){
+    return {
+        restrict:"A",
+        link:function(scope,element,attrs){
+            var pos = 0;
+            $(window).scroll(function () {
+                var pos = $(window).scrollTop();
+                if(pos>attrs['prefix']){
+                    element.addClass("prefix");
+                } else {
+                    element.removeClass("prefix");
+                }
+            });
+        }
+    }
+})
+
+app.directive("help",function($http){
+    return {
+        restrict:"A",
+        templateUrl: "static/templates/help.html"
+    }
+})
+
+/* Filters ---------------------------------------------------- */
+
+app.filter('htmll', ['$sce', function($sce){
+    return function(text) {
+        return $sce.trustAsHtml(text);
+    };
+}]);
+
+app.filter("round",function(){
+    return function(ms){
+        return (Math.round(ms * 1000) / 1000)+"ms";
+    }
 })
