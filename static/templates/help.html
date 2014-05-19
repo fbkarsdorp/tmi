@@ -1,26 +1,58 @@
-<h1>Usage guide</h1>
-<p>MIST provides an expressive and rich query system, allowing users to efficiently retrieve their results. Here you will find documentation about most of the essential features en search functionalities.</p>
-<h2>Single word search</h2>
-<p>Single word search is the simplest form of search: users search for a single word. The index retrieves all motifs containing the search word and ranks them according to how informative the word is for that particular motif. If, for example, a user searches for the word <em>devil</em>, the motif G303 ('Devil') will be ranked highest because it contains no other words than the word searched for. We describe single word search as the "simplest form of search". If a motif mentions a word more than once (for example motif G303.9.4.7.1 (Devil and girl. "Are you lonely?") Girl: "No, devil, with God and angels") mentions devil in both the primary description as in the additional information, leading to the high placement on the list of results. There is however another level to the simple search. Before the indexer performs its lookup, it expands each search word to its two direct hyperonymic parents as provided by WordNet. This means that if a user enters the search query <code>cat</code>, the system will also look for <code>feline</code> and <code>carnivore</code>. Note however, that because of the weights assigned to the different search fields, motifs matching only the expanded search terms will be ranked lower than those containing the term <code>cat</code>.</p>
+<h1>Usage guide to MOMFER</h1>
+
+<p>MOMFER is an online tool that allows users to efficiently search <a href="http://en.wikisource.org/wiki/Motif-Index_of_Folk-Literature/Volume_1">Thompson&#39;s <em>Motif-Index</em></a>. This page provides documentation about most of the features and search functionalities.</p>
+
+<h2>Individual terms and phrases</h2>
+
+<p>Find motifs containing the term <code>troll</code>:</p>
+
+<p><code>troll</code></p>
+
+<p>Motifs have four fields: a description, additional information, a motif ID, and references, containing names of researchers and countries. By default the tool will search for matches in the description and additional information of a motif. Furthermore, the Indexer expands each search word to its two direct hyperonymic parents as provided by <a href="http://wordnet.princeton.edu">WordNet</a>. If a user enters the query <code>cat</code>, the system will also look for words that fall under <code>feline</code> and <code>carnivore</code>, for example <code>lion</code> or <code>dog</code>. Motifs matching only the expanded search terms will be ranked lower than those containing the initial searcg term because of the weights assigned to the different search fields.</p>
+
+<p>Find motifs containing the phrase:</p>
+
+<p><code>&quot;black cat&quot;</code></p>
+
+<p>Phrases can be searched for using string surrounded by double quotes. Note that this is different from boolean <code>AND</code> searches where the order of the two words is not important.</p>
+
 <h2>Multi word search (Boolean operators)</h2>
+
+<p>When searching for two or more words, the index applies the same procedure as for single word searches, including the semantic expansion. Users can define the relation between different words using the boolean operators <code>OR</code>, <code>AND</code> and <code>NOT</code> (capitals are obligatory).</p>
+
 <h3><code>OR</code></h3>
-<p>By default all queries are represented as logically inclusive <code>OR</code> statements. This means that when a user searches for two words, e.g. <em>cat</em> and <em>transformation</em>, the index will search for all motifs containing either <em>cat</em> or <em>transformation</em>. Motifs that contain both search words are considered to be better matches and will be ranked higher than those containing only a single expression.</p>
+
+<p>By default all queries are represented as logically inclusive <code>OR</code> statements. This means that when a user searches for two words, as in <code>cat transformation</code>, the index will search for all motifs containing either <em>cat</em> or <em>transformation</em>. Motifs that contain both search words are considered to be better matches and will be ranked higher than those containing only a single expression. </p>
+
 <h3><code>AND</code></h3>
+
 <p>To force the system to exclusively retrieve motifs containing both search terms, users need to add the boolean operator <code>AND</code>, as in <code>cat AND transformation</code>. Naturally this can be extended to as many search terms as the user requires.</p>
+
 <h3><code>NOT</code></h3>
-<p>To exclude a particular query term from the results, users need to add the boolean operator <code>NOT</code> preceded by <code>AND</code>, as in <code>magic AND NOT witch</code>.</p>
-<h2>Field specific search</h2>
-<p>By default, the index searches for matches of a particular word in all available fields (description, additional description, WordNet expansions, and references) using the field weights as described above. Users can override this default behavior by making explicit in which field they want to search. For example, to search for all motifs that mention a Chinese reference, one could issue the query: <code>ref:chinese</code>, where the search term is preceded by the expression <code>ref:</code>. Similarly, one could search for all motifs that contain words with the concept 'color' as one of its hyperonymic parents, but not the word <em>color</em> itself, using <code>wn:color</code>. Users can search the different fields individually using the following keywords, each followed by a colon:</p>
+
+<p>To exclude a particular query term from the results, users need to add the boolean operator <code>NOT</code> preceded by <code>AND</code>, as in <code>magic AND NOT witch</code>. </p>
+
+<h2>Fields</h2>
+
+<p>Users can override and adjust the default search (description and additional) by making explicit in which field they want to search using the following keywords:</p>
+
 <ul>
-<li><code>motif</code> (to search for motif ID's, e.g. <code>motif:A100</code>);</li>
-<li><code>description</code> (to search for words solely in motif descriptions, e.g. <code>description:magic</code>);</li>
-<li><code>additional</code> (to search for words solely in the additional descriptions of motifs, e.g. <code>additional:dragon</code>);</li>
+	<li><code>motif</code> (to search for motif ID&#39;s, e.g. <code>motif:A100</code>);</li>
+	<li><code>description</code> (to search for words solely in motif descriptions, e.g. <code>description:magic</code>);</li>
+	<li><code>additional</code> (to search for words solely in the additional descriptions of motifs, e.g. <code>additional:dragon</code>);</li>
+	<li><code>references</code> (to search for words that are part of the references (e.g. sources or countries of origin) in the index, e.g. <code>references:Baughman</code>);</li>
+	<li><code>location</code> (to search for motifs based on their country of origin, e.g. <code>location:china</code>).</li>
 </ul>
+
+<p>Also, it is possible to find motifs based on their WordNet category. For example: <code>wn:color</code> returns motifs containing words with &#39;color&#39; as one of its hyperonymic parents (e.g. &#39;black&#39; or &#39;green&#39;) but which do not contain the word <em>color</em> itself.</p>
+
+<h2>Inexact terms</h2>
+
+<p>The search tool enable searches using two regular expressions:</p>
+
 <ul>
-<li><code>references</code> (to search for words that are part of the references (e.g. sources or countries of origin) in the index, e.g. <code>references:Baughman</code>);</li>
-<li><code>location</code> (to search for motifs based on their country of origin).</li>
+	<li><code>\*</code> (represents any number of characters, e.g. <code>cat\*</code> returns &#39;cats&#39;, &#39;caterpillar&#39;, &#39;catapult&#39; etc.)</li>
+	<li><code>?</code> (represents a single character, e.g. <code>c?t</code> finds &#39;cat&#39;, &#39;cot, &#39;cut&#39; etc.)</li>
 </ul>
-<h2>WordNet search</h2>
-<p>One field specific search deserves a somewhat lenghtier explanation: the <code>wn:</code> option. This option is used to explicitely search for concepts available in the WordNet expansions, e.g. <code>wn:instrument</code>.</p>
-<h2>Regular expressions</h2>
-<h2>Ngram search</h2>
+
+<p>Other regular expressions are not supported.</p>
