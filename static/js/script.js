@@ -20,6 +20,7 @@ app.controller("search",function($scope,$http,$timeout){
 
     $scope.page = 1;
     $scope.pagecount = 99;
+    $scope.no_results=false;
 
     $scope.search = function(q,page){
         $scope.q = q;
@@ -42,11 +43,23 @@ app.controller("search",function($scope,$http,$timeout){
                 $scope.loading = false;
             })
         }
+    }
+    $scope.download = function(){
+        window.open("/download?q="+$scope.q);
     } 
+    $scope.search_button = function(){
+        $scope.search($scope.q);
+    }
     $scope.sugsearch = function(q){
         if(q.match(" ")){q = "wn:\""+q+"\""} else {q = "wn:"+q;};
         $scope.search(q);
     } 
+    $scope.check_results = function(){
+        if($scope.data){
+            if($scope.data.hits<1 && !$scope.loading){return true;}
+        }
+        return false;
+    }
     $scope.pages = function(){
         var pages = [];
         var p = $scope.page-4;
@@ -67,6 +80,18 @@ app.controller("search",function($scope,$http,$timeout){
             }
         }
     })
+    $scope.is_first = function(){
+        if($scope.page == 1) return false
+        return true;
+    }
+    $scope.is_last = function(){
+        if($scope.data){
+            if($scope.page == $scope.data.pagecount){
+                return false
+            }
+        }
+        return true;
+    }
 })
 
 /* Directives ------------------------------------------------- */
@@ -89,8 +114,8 @@ app.directive("fixed",function($http,$rootScope){
         restrict:"A",
         link:function(scope,element,attrs){
             var pos = 0;
-            $(window).scroll(function () {
-                var pos = $(window).scrollTop();
+            $("#frame").scroll(function () {
+                var pos = $("#frame").scrollTop();
                 if(pos>attrs['fixed']){
                     element.addClass("fixed");
                 } else {
@@ -106,8 +131,8 @@ app.directive("prefix",function($http,$rootScope){
         restrict:"A",
         link:function(scope,element,attrs){
             var pos = 0;
-            $(window).scroll(function () {
-                var pos = $(window).scrollTop();
+            $("#frame").scroll(function () {
+                var pos = $("#frame").scrollTop();
                 if(pos>attrs['prefix']){
                     element.addClass("prefix");
                 } else {

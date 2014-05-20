@@ -1,0 +1,7 @@
+
+.icon-search-1:before { content: '\25'; } /* '%' */
+.icon-down-circled:before { content: '\26'; } /* '&amp;' */
+.icon-download-3:before { content: '\21'; } /* '!' */
+.icon-question:before { content: '\22'; } /* '&quot;' */
+.icon-search-5:before { content: '\24'; } /* '$' */
+.icon-search-circled:before { content: '\23'; } /* '#' */
