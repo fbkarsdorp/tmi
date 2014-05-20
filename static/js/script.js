@@ -45,7 +45,7 @@ app.controller("search",function($scope,$http,$timeout){
         }
     }
     $scope.download = function(){
-        window.open("/download?q="+$scope.q);
+        window.open("download?q="+$scope.q);
     } 
     $scope.search_button = function(){
         $scope.search($scope.q);
