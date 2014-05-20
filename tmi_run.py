@@ -96,7 +96,7 @@ def index(path):
     return render_template('index.html', title='TMI-search')
 
 if __name__ == '__main__':
-    app.run(debug=True,host='plot',port=5555,use_reloader=True,threaded=True)
+    app.run(debug=True,host='localhost',port=5555,use_reloader=True,threaded=True)
 
 
 
