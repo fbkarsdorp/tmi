@@ -23,13 +23,13 @@ from expand import WordnetPlugin, MultiFieldWordNetParser
 app = Flask(__name__)
 
 # logging
-formatter = logging.Formatter('%(asctime)s : %(levelname)s : %(message)s')
-logfile = "../../logs/query.log" if os.path.isdir('../../logs') else 'query.log'
-file_handler = logging.FileHandler(logfile)
-file_handler.setFormatter(formatter)
-file_handler.setLevel(logging.INFO)
-app.logger.addHandler(file_handler)
-app.logger.setLevel(logging.INFO)
+#formatter = logging.Formatter('%(asctime)s : %(levelname)s : %(message)s')
+#logfile = "query.log"
+#file_handler = logging.FileHandler(logfile)
+#file_handler.setFormatter(formatter)
+#file_handler.setLevel(logging.INFO)
+#app.logger.addHandler(file_handler)
+#app.logger.setLevel(logging.INFO)
 
 @app.route('/download', methods=['GET', 'POST'])
 def download():
@@ -82,7 +82,7 @@ def api():
                 yield result
         q = json.loads(request.data)['q']
         page = json.loads(request.data).get('page') or 1
-        app.logger.info('QUERY %s' % q.strip())
+ #       app.logger.info('QUERY %s' % q.strip())
         results = _search(q.strip(),page)
         found = len(results)
         # html_results = htmlize(results)
