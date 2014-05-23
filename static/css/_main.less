@@ -4,7 +4,7 @@
 @import 'fontello/css/fontello.css';
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic);
 
-@bg : #e2e6e9;
+@bg : #e2e6e9 url(images/pattern.jpg);
 
 @linkcolor : #999;
 @dark : #444;
@@ -104,6 +104,7 @@ body, html {
 			display:inline-block;
 			outline-style:none;
 			cursor: pointer;
+			text-shadow: 0 2px 1px rgba(255,255,255,0.8), 0 -1px .3px rgba(0,0,0,0.8);
 			&:hover {
 				color:@c3;
 			}
@@ -338,10 +339,9 @@ body, html {
 	margin: 0 auto;
 	width:100%;
 	margin-top:0;
-	padding:0.2em;
+	padding:1em;
 	.padding();
 	#result {
-		//border-bottom:1px solid rgba(0,0,0,0.05);
 		text-align:left;
 		padding:2em 3em;
 		background:rgba(255,255,255,0.5);
@@ -451,7 +451,7 @@ body, html {
 	.transition(0.1s);
 	.padding();
 	#content {
-		margin:2em 5em;
+		margin:2em 5em 8em 5em;
 		opacity:0;
 		.transition(0.1s);
 	}

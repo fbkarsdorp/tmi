@@ -1,4 +1,4 @@
-<div id="helpbutton"><button ng-click='help=!help' id='helpbutton' class='icon-question'></button></div>
+<div id="helpbutton"><button ng-click='help=!help' id='helpbutton' ng-class="{'icon-question':!help,'icon-cancel-circle-1':help}"></button></div>
 
 <div id="main" ng-class="{'open':help}">
 
@@ -66,6 +66,19 @@
 	</div>
 </div>
 
-<div ng-class="{'open':help}" id="help" ng-click='help=!help'>
+<div ng-class="{'open':help}" id="help">
 	<div id='content' help></div>
 </div>
+
+
+<!--[if lt IE 10]>
+<style>
+#search { display:table;width:100% !important;}
+#search > div {display:table-cell;vertical-align:top;}
+#container {display:table;width:100% !important; height:100%;}
+#container > div {display:table-cell}
+#container #help {display:none;}
+#container .open#help {display:table-cell;position:relative;vertical-align:top;}
+#container .open#help #content {height:100%;overflow:scroll;margin:0;position:relative;padding:0 4em;}
+</style>
+<![endif]-->
