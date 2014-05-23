@@ -109,6 +109,21 @@ body, html {
 				color:@c3;
 			}
 		}
+		&.fixed {
+			@media (max-width:1000px){
+				top:80px;
+				background:@c3;
+				.rounded(5px 0 0 5px);
+				padding:0;
+				font-size:30px;
+				text-shadow:none;
+				color:#eee;
+				.transition(0.1s);
+				&:hover {
+					color:@light;
+				}
+			}
+		}
 	}
 
 #main {
@@ -299,6 +314,9 @@ body, html {
 		width:50%;
 	}
 	#head {
+		@media (max-width:1000px){
+			display:none;
+		}
 		#meta {
 			#stats {
 				@media (max-width:1400px){
@@ -474,7 +492,7 @@ body, html {
 		line-height:2em;
 		font-weight:100;
 	}
-	h1 {font-size:2em;text-align:center;line-height:4em;}
+	h1 {font-size:2em;text-align:center;margin:2em 0;}
 	h2 {font-size:1.6em;}
 	h3 {font-size:1.3em;}
 	h4 {font-size:1.1em;}
