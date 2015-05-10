@@ -14,3 +14,20 @@ Dependencies:
 Install with:
 
     pip install networkx pattern flask whoosh ijson
+
+Next create the index using:
+
+    python indexer.py
+
+Finally start the web servive (locally) using:
+
+    python tmi_run.py
+
+The following can be used as a starting point for a wsgi script to be used with Apache.
+
+    import sys
+    import glob
+    import os
+    
+    sys.path.append('/path/to/folder/of/tmi')        
+    from tmi.tmi_run import app as application
