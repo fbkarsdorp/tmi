@@ -208,5 +208,5 @@ if __name__ == '__main__':
     normalize_step_weight(tmi)
     tmi.reverse(copy=False)
     with open('tmi.cPickle', 'w') as out:
-        cPickle.dump(tmi, out)
+        cPickle.dump(tmi, out, protocol=2)
 

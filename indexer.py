@@ -12,14 +12,16 @@ from pattern.en import wordnet as WN
 u = unicode
 
 SCHEMA = Schema(motif = ID(stored=True, unique=True),
-                description = TEXT(analyzer=SimpleAnalyzer(), 
+                description = TEXT(analyzer=SimpleAnalyzer(),
                                    field_boost=2.0, stored=True, phrase=True),
-                additional = TEXT(analyzer=SimpleAnalyzer(), 
+                additional = TEXT(analyzer=SimpleAnalyzer(),
                                   field_boost=1.5, stored=True, phrase=True),
-                wn = KEYWORD(field_boost=1.0, stored=True, lowercase=True, scorable=True, commas=True),
+                wn = KEYWORD(field_boost=1.0, stored=True, lowercase=True,
+                             scorable=True, commas=True),
                 references = TEXT(analyzer=SimpleAnalyzer(), field_boost=0.5,
                                   stored=True, phrase=True),
-                location = KEYWORD(field_boost=0.5, stored=True, lowercase=True, scorable=True, commas=True))
+                location = KEYWORD(field_boost=0.5, stored=True, lowercase=True,
+                                   scorable=True, commas=True))
 
 
 if __name__ == '__main__':
@@ -42,11 +44,10 @@ if __name__ == '__main__':
                         keywords.update(reduce(set.union, hypernyms))
                 except (IndexError, ValueError):
                     pass
-            writer.add_document(motif = u(item['motif']), 
+            writer.add_document(motif = u(item['motif']),
                                 description = u(item['description']),
-                                additional = u(item['additional_description']), 
+                                additional = u(item['additional_description']),
                                 wn = u(', '.join(keywords)),
                                 references=u(item['references']),
                                 location=u(', '.join(item['locations'])))
         writer.commit()
-
