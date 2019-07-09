@@ -37,7 +37,6 @@ class WordnetPlugin(Plugin):
                 # versions of the node for each configured "multi" field.
                 newnodes = []
                 for fname in self.fieldnames:
-                    print fname
                     newnode = copy.copy(node)
                     newnode.set_fieldname(fname)
                     newnode.set_boost(self.boosts.get(fname, 1.0))

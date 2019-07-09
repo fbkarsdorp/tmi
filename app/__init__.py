@@ -22,15 +22,6 @@ from expand import WordnetPlugin, MultiFieldWordNetParser
 #flask application
 app = Flask(__name__)
 
-# logging
-#formatter = logging.Formatter('%(asctime)s : %(levelname)s : %(message)s')
-#logfile = "query.log"
-#file_handler = logging.FileHandler(logfile)
-#file_handler.setFormatter(formatter)
-#file_handler.setLevel(logging.INFO)
-#app.logger.addHandler(file_handler)
-#app.logger.setLevel(logging.INFO)
-
 @app.route('/download', methods=['GET', 'POST'])
 def download():
     ix = whoosh.index.open_dir('index', indexname='tmi')
@@ -102,9 +93,3 @@ def api():
 @app.route('/<path:path>')
 def index(path):
     return render_template('index.html', title='TMI-search')
-
-if __name__ == '__main__':
-    app.run(debug=True,host='localhost',port=5555,use_reloader=True,threaded=True)
-
-
-

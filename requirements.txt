@@ -1,0 +1,6 @@
+networkx
+pattern
+flask
+whoosh
+ijson
+gunicorn

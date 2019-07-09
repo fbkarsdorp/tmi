@@ -31,7 +31,7 @@ if __name__ == '__main__':
 
     ix = index.open_dir('index', indexname='tmi')
     writer = ix.writer()
-    with open("tmi.json") as infile:
+    with open("data/tmi.json") as infile:
         for item in ijson.items(infile, "item"):
             keywords = set()
             for lemma in item['lemmas']:
